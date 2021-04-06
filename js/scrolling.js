@@ -14,7 +14,7 @@ var aPageContainer = $('.page-container');
 var aFilledDot = $('#filled-dot');
 var windowWidth = $(window).width();
 const tabletView = 970;
-const mobileView = 768;
+const mobileView = 767;
 
 
 
