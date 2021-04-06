@@ -4,7 +4,7 @@ var itemImageResults;
 var listLogo = [];
 var listSnacks = [];
 var listResults = [];
-var dirLogos = "https://victorlupan.github.io/testproject.io/images/logos/";
+var dirLogos = "/testproject.io/images/logos/";
 var dirResults = "/testproject.io/images/results/";
 var dirSnacks = "/testproject.io/images/snacks/";
 var fileExtension = ".svg"
