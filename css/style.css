@@ -495,9 +495,10 @@ MEDIA QUERIES
 		height: initial;
 	}
 	.page-grid{
-		grid-template-rows: auto;
+		grid-template-rows: 1fr auto;
 	}
 	.snack-wrapper{
+		grid-template-rows:0 auto 5% auto;
 		height: initial;
 	}
 	.topteeth, .bottomteeth{z-index: 9 !important;}
