@@ -489,13 +489,16 @@ MEDIA QUERIES
 	.page{
 		min-height: 80vh;
 		height: inherit;
-		justify-content: start;
+		/* justify-content: start; */
 	}
 	#pageTwo{
 		height: initial;
 	}
 	.page-grid{
 		grid-template-rows: auto;
+	}
+	.snack-wrapper{
+		height: initial;
 	}
 	.topteeth, .bottomteeth{z-index: 9 !important;}
 	
