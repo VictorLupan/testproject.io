@@ -9,8 +9,6 @@ var dirLogos = pathFolder + "images/logos/";
 var dirResults = pathFolder + "images/results/";
 var dirSnacks = pathFolder + "images/snacks/";
 var fileExtension = ".svg"
-//var curDomain = "//" + document.domain
-console.log(pathFolder + "images/snacks/")
 
 
 
