@@ -4,12 +4,13 @@ var itemImageResults;
 var listLogo = [];
 var listSnacks = [];
 var listResults = [];
-var dirLogos = "/testproject.io/images/logos/";
-var dirResults = "/testproject.io/images/results/";
-var dirSnacks = "/testproject.io/images/snacks/";
+var pathFolder = window.location.pathname
+var dirLogos = pathFolder + "images/logos/";
+var dirResults = pathFolder + "images/results/";
+var dirSnacks = pathFolder + "images/snacks/";
 var fileExtension = ".svg"
 //var curDomain = "//" + document.domain
-
+console.log(pathFolder + "images/snacks/")
 
 
 

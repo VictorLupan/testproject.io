@@ -502,7 +502,12 @@ MEDIA QUERIES
 	.topteeth, .bottomteeth{z-index: 9 !important;}
 	
 }
+@media (max-width:500px){
+	.dots{right: 15px;}
+}
 /* safari, wide/high res */
+
+
 
 @media (min-width: 1600px) {
 
