@@ -497,9 +497,6 @@ MEDIA QUERIES
 	.page-grid{
 		grid-template-rows: auto;
 	}
-	.snack-wrapper{
-		grid-template-rows: 5% 25% 5% auto;
-	}
 	.topteeth, .bottomteeth{z-index: 9 !important;}
 	
 }
