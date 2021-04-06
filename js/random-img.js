@@ -100,3 +100,4 @@ if(getCookie('cookieListLogo', 'cookieListSnacks', 'cookieListResults') !== null
   
     
 }
+
