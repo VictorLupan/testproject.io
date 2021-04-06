@@ -4,11 +4,11 @@ var itemImageResults;
 var listLogo = [];
 var listSnacks = [];
 var listResults = [];
-var dirLogos = "/images/logos/";
-var dirResults = "/images/results/";
-var dirSnacks = "/images/snacks/";
+var dirLogos = "/sh/images/logos/";
+var dirResults = "/sh/images/results/";
+var dirSnacks = "/sh/images/snacks/";
 var fileExtension = ".svg"
-var curDomain = "//" + document.domain
+//var curDomain = "//" + document.domain
 
 
 
@@ -45,12 +45,11 @@ if(getCookie('cookieListLogo', 'cookieListSnacks', 'cookieListResults') !== null
   listSnacks = JSON.parse(getCookie('cookieListSnacks'));
   listResults = JSON.parse(getCookie('cookieListResults'));  
   
-  
 }else{
   for (let i = 1; i <= 16; i++){
-    listLogo.push(curDomain + dirLogos + i + fileExtension);
-    listSnacks.push(curDomain + dirSnacks + i + fileExtension);
-    listResults.push(curDomain + dirResults + i + fileExtension);
+    listLogo.push(dirLogos + i + fileExtension);
+    listSnacks.push(dirSnacks + i + fileExtension);
+    listResults.push(dirResults + i + fileExtension);
   }
   listLogo.forEach((url) => {
     $.ajax({
