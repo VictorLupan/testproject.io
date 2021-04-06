@@ -5,8 +5,8 @@ var listLogo = [];
 var listSnacks = [];
 var listResults = [];
 var dirLogos = "/testproject.io/images/logos/";
-var dirResults = "/sh/images/results/";
-var dirSnacks = "/sh/images/snacks/";
+var dirResults = "/testproject.io/images/results/";
+var dirSnacks = "/testproject.io/images/snacks/";
 var fileExtension = ".svg"
 //var curDomain = "//" + document.domain
 
