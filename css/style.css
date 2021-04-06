@@ -506,7 +506,12 @@ MEDIA QUERIES
 @media (max-width: 500px){
 	h1,
 	.message-ty .title-sticker{font-size: 50px;}
-	.dots{right: 5px;}
+	.dots{right: 0;}
+	.dot{
+		width: 20px;
+		height: 20px;
+		margin: 20px 10px;
+	}
 	.header{top: 20px;}
 	.footer{bottom: 20px;}
 }
