@@ -263,7 +263,7 @@ function tabletAction(thisObj){
       $(thisObj).addClass("hide-md").removeClass("show").next().addClass("show");
       if( snackActive == 6){
         $(".snack-grid").hide();
-        $(".message-ty").show();
+        $(".message-ty").addClass("show-message").show();
     }
     }, 2000);
   }
@@ -276,8 +276,23 @@ function mobileAction(thisObj){
       $(thisObj).addClass("hide-md").removeClass("show").next().addClass("show");
       if( snackActive == 4){
         $(".snack-grid").hide();
-        $(".message-ty").show();
+        $(".message-ty").addClass("show-message").show();
     }
+    }, 2000);
+  }  
+}
+function desktopAction(thisObj){
+  var snackActive = $(".snack.active").length;
+  if (windowWidth >= tabletView) {
+    setTimeout(function(){ 
+            
+      $(thisObj).addClass("show");
+     
+        if( snackActive == $(".snack").length){
+          $(".snack-grid").hide();
+          $(".message-ty").addClass("show-message").show();   
+      }
+      
     }, 2000);
   }  
 }
@@ -286,18 +301,7 @@ $(".snack").on('click', function(){
   $('.topteeth', $(this)).css("visibility", "visible");
   $('.bottomteeth', $(this)).css("visibility", "visible");
   $(this).addClass('active');
-  setTimeout(function(){ 
-    let snackActive = $(".snack.active").length
-    
-    $(this).addClass("show");
-   
-      if( snackActive == $(".snack").length){
-        $(".snack-grid").hide();
-        $(".message-ty").show();
-   
-    }
-    
-  }, 1500);
+  desktopAction($(this));
   mobileAction($(this));
   tabletAction($(this));
   closeTeeth($(this), openTeeth);

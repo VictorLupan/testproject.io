@@ -359,6 +359,7 @@ a{
 	display: none;
 	font-family: 'Open Sans', sans-serif;
 }
+.message-ty.show-message{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 .message-ty .title-sticker{
 	background-color: #3b3b3c;
 	color: #e0dcd9;
@@ -502,8 +503,17 @@ MEDIA QUERIES
 	.topteeth, .bottomteeth{z-index: 9 !important;}
 	
 }
-@media (max-width:500px){
-	.dots{right: 15px;}
+@media (max-width: 500px){
+	h1,
+	.message-ty .title-sticker{font-size: 50px;}
+	.dots{right: 5px;}
+}
+@media (max-width: 350px){
+	h1,
+	.message-ty .title-sticker{font-size: 40px;}
+	.subtitle{font-size: 24px;}
+	.header{top: 20px;}
+	.footer{bottom: 10px;}
 }
 /* safari, wide/high res */
 
