@@ -507,12 +507,13 @@ MEDIA QUERIES
 	h1,
 	.message-ty .title-sticker{font-size: 50px;}
 	.dots{right: 5px;}
+	.header{top: 20px;}
+	.footer{bottom: 20px;}
 }
 @media (max-width: 350px){
 	h1,
 	.message-ty .title-sticker{font-size: 40px;}
 	.subtitle{font-size: 24px;}
-	.header{top: 20px;}
 	.footer{bottom: 10px;}
 }
 /* safari, wide/high res */
