@@ -149,7 +149,7 @@ function setSnacks(){
     //var chosenSnack = snackArray[Math.floor(Math.random()*snackArray.length)];
     //$(this).attr("src","images/snacks/"+chosenSnack);
     
-      var itemImageSnacks = listSnacks[Math.floor(Math.random()*listSnacks.length)];
+      var itemImageSnacks = images.snacks[Math.floor(Math.random()*images.snacks.length)];
       $(this).attr("src",itemImageSnacks);
     
   });
@@ -179,10 +179,10 @@ function setLogo(){
   setTimeout(function(){ 
   
     var itemImage;
-  itemImage = listLogo[Math.floor(Math.random() * listLogo.length)];
+  itemImage = images.logos[Math.floor(Math.random() * images.logos.length)];
   
   $('.logo').attr("src", itemImage);
-  console.log(itemImage)
+  
 
   }, 100);
   console.log("logo loaded");
@@ -224,7 +224,7 @@ function openTeeth(thisObj){
   
 
     var itemImageResults;
-  itemImageResults=listResults[Math.floor(Math.random()*listResults.length)];
+  itemImageResults=images.results[Math.floor(Math.random()*images.results.length)];
   $('.snack-item', thisObj).attr("src", itemImageResults);
   $('.snack-item', thisObj).addClass("result-item");
   $('.snack-item', thisObj).parent().addClass("no-pointer");
@@ -254,6 +254,18 @@ function closeTeeth(thisObj, callback){
   $('.bottomteeth',thisObj).css("animation-name", "bottomTeethAnimation");
   callback(thisObj);*/
 };
+
+/*function actionSnack(thisObj){
+  setTimeout(function(){ 
+    $(thisObj).addClass("hide-md").removeClass("show").next().addClass("show");
+    if( snackActive == 6){
+      $(".snack-grid").hide();
+      $(".message-ty").addClass("show-message").show();
+  }
+  }, 2000);
+}*/
+
+
 
 function tabletAction(thisObj){
   var snackActive = $(".snack.active").length;
@@ -296,14 +308,17 @@ function desktopAction(thisObj){
     }, 2000);
   }  
 }
-
+var x = function(x){console.log(+x + "1")}
 $(".snack").on('click', function(){
+  var countClick = 0
+  
   $('.topteeth', $(this)).css("visibility", "visible");
   $('.bottomteeth', $(this)).css("visibility", "visible");
   $(this).addClass('active');
   desktopAction($(this));
   mobileAction($(this));
   tabletAction($(this));
+  zZz($(this), countClick, x);
   closeTeeth($(this), openTeeth);
   
 
