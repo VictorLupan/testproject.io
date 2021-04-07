@@ -229,7 +229,7 @@ function openTeeth(thisObj){
   
 
   $('.topteeth', thisObj).css("transform", "translateY(0px)");
-  $('.bottomteeth', thisObj).css("bottom", "0px");
+  $('.bottomteeth', thisObj).css("transform", "translateY(0px)");
   
   $(thisObj).off('click');
   $('.topteeth', thisObj).css("visibility", "hidden");
@@ -242,10 +242,10 @@ function closeTeeth(thisObj, callback){
   var topAmount = -topSpacer-4;
   var moveTopY = "translateY("+ topAmount+"px)";
   var bottomAmount = bottomSpacer + 2;
-  //var moveBottomY = "translateY("+ bottomAmount+"px)";
+  var moveBottomY = "translateY("+ bottomAmount+"px)";
   $('.topteeth', thisObj).css("transform", moveTopY);
-  $('.bottomteeth', thisObj).css("bootom", "0");
-  setTimeout(function(){ callback(thisObj);}, 500);
+  $('.bottomteeth', thisObj).css("transform", moveBottomY);
+  setTimeout(function(){ callback(thisObj);}, 2500);
   /*$('.topteeth',thisObj).css("animation-name", "topTeethAnimation");
   $('.bottomteeth',thisObj).css("animation-name", "bottomTeethAnimation");
   callback(thisObj);*/
@@ -328,7 +328,7 @@ function desktopAction(thisObj){
     }, 2000);
   }  
 }
-var x = function(x){console.log(+x + "1")}
+
 $(".snack").on('click', function(){
   var countClick = 0
   
@@ -338,7 +338,7 @@ $(".snack").on('click', function(){
   desktopAction($(this));
   mobileAction($(this));
   tabletAction($(this));
-  zZz($(this), countClick, x);
+
   closeTeeth($(this), openTeeth);
   
 
