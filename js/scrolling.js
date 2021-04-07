@@ -74,7 +74,7 @@ function setTeeth(){
   topSpacer = "-" + $('.topteeth').height();
   $('.topteeth').css("margin-top", topSpacer+"px");
   bottomSpacer = "-" + $('.bottomteeth').height();
-  //$('.bottomteeth').css("margin-top", topSpacer+"px");
+  $('.bottomteeth').css("margin-bottom", bottomSpacer+"px");
   console.log("teeth loaded. Top spacer is: " + topSpacer);
 }
 
