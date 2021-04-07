@@ -161,14 +161,10 @@ function setSnacks(){
   		}
   		time += 100;
   		chartOrder += 1;
-      $(this).on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      /*$(this).on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).addClass("v-visibility");
         $(this).removeAttr('style');
-      });
-      
-      /*if( $(this).is(':animated') ) {
-        $(this).removeAttr('style');
-      }*/
+      });*/
   });
   
 }
