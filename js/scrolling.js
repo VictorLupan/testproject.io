@@ -265,7 +265,31 @@ function closeTeeth(thisObj, callback){
   }, 2000);
 }*/
 
+function zZz(thisObj, countClick){
+  var snackActive = $(".snack.active").length;
+  if(windowWidth >= tabletView){
+    countClick = 8;
+  }else if(windowWidth <= tabletView && windowWidth >= mobileView){
+    countClick = 6;
+  }else{
+    countClick = 4;
+  }
+  console.log(snackActive)
+  console.log(countClick)
+}
 
+// function showMessage(thisObj){
+//   var snackActive = $(".snack.active").length;
+//   if (windowWidth <= tabletView && windowWidth > mobileView) {
+//     setTimeout(function(){ 
+//       $(thisObj).addClass("hide-md").removeClass("show").next().addClass("show");
+//       if( snackActive == 6){
+//         $(".snack-grid").hide();
+//         $(".message-ty").addClass("show-message").show();
+//     }
+//     }, 2000);
+//   }
+// }
 
 function tabletAction(thisObj){
   var snackActive = $(".snack.active").length;
