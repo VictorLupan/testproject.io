@@ -73,7 +73,7 @@ function setBkg(){
 function setTeeth(){
   topSpacer = "-" + $('.topteeth').height();
   $('.topteeth').css("margin-top", topSpacer+"px");
-  bottomSpacer = "-" + $('.bottomteeth').height();
+  bottomSpacer = "-" + $('.bottomteeth').height() - 2;
   $('.bottomteeth').css("bottom", bottomSpacer+"px");
   console.log("teeth loaded. Top spacer is: " + topSpacer);
 }
@@ -245,7 +245,7 @@ function closeTeeth(thisObj, callback){
   var moveBottomY = "translateY("+ bottomAmount+"px)";
   $('.topteeth', thisObj).css("transform", moveTopY);
   $('.bottomteeth', thisObj).css("transform", moveBottomY);
-  setTimeout(function(){ callback(thisObj);}, 2500);
+  setTimeout(function(){ callback(thisObj);}, 500);
   /*$('.topteeth',thisObj).css("animation-name", "topTeethAnimation");
   $('.bottomteeth',thisObj).css("animation-name", "bottomTeethAnimation");
   callback(thisObj);*/
