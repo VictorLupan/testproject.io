@@ -242,9 +242,9 @@ function closeTeeth(thisObj, callback){
   var topAmount = -topSpacer-4;
   var moveTopY = "translateY("+ topAmount+"px)";
   var bottomAmount = bottomSpacer + 2;
-  var moveBottomY = "translateY("+ bottomAmount+"px)";
+  var moveBottomY = 0;
   $('.topteeth', thisObj).css("transform", moveTopY);
-  $('.bottomteeth', thisObj).css("transform", moveBottomY);
+  $('.bottomteeth', thisObj).css("bottom", moveBottomY);
   setTimeout(function(){ callback(thisObj);}, 500);
   /*$('.topteeth',thisObj).css("animation-name", "topTeethAnimation");
   $('.bottomteeth',thisObj).css("animation-name", "bottomTeethAnimation");
