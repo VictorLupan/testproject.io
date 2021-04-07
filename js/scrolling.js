@@ -74,7 +74,7 @@ function setTeeth(){
   topSpacer = "-" + $('.topteeth').height();
   $('.topteeth').css("margin-top", topSpacer+"px");
   bottomSpacer = "-" + $('.bottomteeth').height();
-  $('.bottomteeth').css("margin-bottom", bottomSpacer+"px");
+  $('.bottomteeth').css("bottom", bottomSpacer+"px");
   console.log("teeth loaded. Top spacer is: " + topSpacer);
 }
 
@@ -229,7 +229,7 @@ function openTeeth(thisObj){
   
 
   $('.topteeth', thisObj).css("transform", "translateY(0px)");
-  $('.bottomteeth', thisObj).css("transform", "translateY(0px)");
+  $('.bottomteeth', thisObj).css("bottom", "0px");
   
   $(thisObj).off('click');
   $('.topteeth', thisObj).css("visibility", "hidden");
@@ -242,9 +242,9 @@ function closeTeeth(thisObj, callback){
   var topAmount = -topSpacer-4;
   var moveTopY = "translateY("+ topAmount+"px)";
   var bottomAmount = bottomSpacer + 2;
-  var moveBottomY = 0;
+  //var moveBottomY = "translateY("+ bottomAmount+"px)";
   $('.topteeth', thisObj).css("transform", moveTopY);
-  $('.bottomteeth', thisObj).css("bottom", moveBottomY);
+  $('.bottomteeth', thisObj).css("bootom", "0");
   setTimeout(function(){ callback(thisObj);}, 500);
   /*$('.topteeth',thisObj).css("animation-name", "topTeethAnimation");
   $('.bottomteeth',thisObj).css("animation-name", "bottomTeethAnimation");
