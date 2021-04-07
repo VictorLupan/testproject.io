@@ -245,7 +245,7 @@ function openTeeth(thisObj){
 function closeTeeth(thisObj, callback){
   var topAmount = -topSpacer-4;
   var moveTopY = "translateY("+ topAmount+"px)";
-  var bottomAmount = bottomSpacer+2;
+  var bottomAmount = bottomSpacer + 2;
   var moveBottomY = "translateY("+ bottomAmount+"px)";
   $('.topteeth', thisObj).css("transform", moveTopY);
   $('.bottomteeth', thisObj).css("transform", moveBottomY);
