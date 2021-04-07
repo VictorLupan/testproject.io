@@ -2,7 +2,7 @@
 *{
  	box-sizing: border-box;
 }
-
+html{height: -webkit-fill-available;}
 body {
 	background: #BE3F3E;
 	/* font-family: 'Roboto Condensed', sans-serif; */
@@ -11,6 +11,7 @@ body {
 	text-transform: uppercase;
 	color:#3B3B3C;
 	height:100vh;
+	min-height: -webkit-fill-available;
 	margin:0;
 	overflow: hidden;
 }
