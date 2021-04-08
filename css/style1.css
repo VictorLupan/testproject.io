@@ -500,13 +500,6 @@ MEDIA QUERIES
 		display: block !important;
 		
 	}
-	.page{
-		min-height: 80vh;
-		height: inherit;
-	}
-	#pageTwo{
-		height: initial;
-	}
 	.topteeth, .bottomteeth{z-index: 9 !important;}
 	
 }
