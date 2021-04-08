@@ -463,8 +463,8 @@ MEDIA QUERIES
 	.vp-height{
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
-		padding-top: 10vh;
-		padding-bottom: 10vh;
+		/* padding-top: 10vh;
+		padding-bottom: 10vh; */
 	}
 	h1{
 		margin: 0;
