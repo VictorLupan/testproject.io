@@ -455,16 +455,25 @@ MEDIA QUERIES
 }
 
 /* mobile */
-
+.vp-height{
+	height: 100%;
+}
 @media (max-width: 767px){
 	body{
-		padding: 0;
+		padding: 1px 0 0 0;
+	}
+	.page-container{
+		height: 80vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
 	}
 	.vp-height{
+		position: relative;
 		height: 100vh;
-		height: calc(var(--vh, 1vh) * 100);
-		padding-top: 10vh;
-		padding-bottom: 10vh;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
 	}
 	h1{
 		margin: 0;
