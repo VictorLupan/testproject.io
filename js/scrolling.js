@@ -362,7 +362,7 @@ and in the direction of the scroll.
   dotPlacement = (currentScrollTop / ($(window).height()*0.8))*maxMoveSpace;
 
 /* move the dot the amount that was scrolled in the correct direction */
-  if(dotPlacement <= maxMoveSpace){
+  if(dotPlacement <= maxMoveSpace || dotPlacement <= 0){
     aMoveDot.css({'top': dotPlacement});
   }
 
