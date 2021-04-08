@@ -463,12 +463,12 @@ MEDIA QUERIES
 		width: 100%;
 	}
 	.page-container{
-		top: 10vh;
-		height: 80vh;
+		/* top: 10vh; */
+		height: 100vh;
 		position: fixed;
 		left: 0;
 		right: 0;
-		bottom: 10vh;
+		/* bottom: 10vh; */
 	}
 	h1{
 		margin: 0;
