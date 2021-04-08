@@ -464,8 +464,8 @@ MEDIA QUERIES
 		width: 100%;
 	}
 	.main{
-		position: relative;
-		height: 100vh;
+		position: fixed;
+		height: 99vh;
 	}
 	.bar{
 		position: relative;
