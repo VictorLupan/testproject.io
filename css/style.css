@@ -491,7 +491,7 @@ MEDIA QUERIES
 		/*scroll-snap-type: y proximity;*/
 	}
 	.page{
-		min-height: 80vh;
+		/*min-height: 80vh;*/
 		height: inherit;
 		/* justify-content: start; */
 	}
@@ -504,7 +504,7 @@ MEDIA QUERIES
 	}
 	.snack-wrapper{
 		/*grid-template-rows:0 auto 5% auto;*/
-		grid-template-rows:0 auto 5% auto;
+		grid-template-rows:0 auto 0 auto;
 		height: initial;
 	}
 	.topteeth, .bottomteeth{z-index: 9 !important;}
