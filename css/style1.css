@@ -463,9 +463,9 @@ MEDIA QUERIES
 		padding: 1px 0 0 0;
 	}
 	.page-container{
+		top: 10vh;
 		height: 80vh;
-		position: absolute;
-		top: 0;
+		position: fixed;
 		left: 0;
 		right: 0;
 	}
