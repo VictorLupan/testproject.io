@@ -2,7 +2,6 @@
 *{
  	box-sizing: border-box;
 }
-html{height: -webkit-fill-available;}
 body {
 	background: #BE3F3E;
 	/* font-family: 'Roboto Condensed', sans-serif; */
@@ -11,7 +10,7 @@ body {
 	text-transform: uppercase;
 	color:#3B3B3C;
 	height:100vh;
-	min-height: -webkit-fill-available;
+	/* min-height: -webkit-fill-available; */
 	margin:0;
 	overflow: hidden;
 	padding-top: 10vh;
@@ -610,10 +609,3 @@ MEDIA QUERIES
 }
 
 
-/* Avoid Chrome to see Safari hack */
-@supports (-webkit-touch-callout: none) {
-	body {
-	  /* The hack for Safari */
-	  height: -webkit-fill-available;
-	}
-  }
