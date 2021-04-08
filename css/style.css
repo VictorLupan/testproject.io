@@ -488,7 +488,6 @@ MEDIA QUERIES
 	}
 	.page-container{
 		scroll-snap-align: end;
-		height: 70vh;
 		/*scroll-snap-type: y proximity;*/
 	}
 	.page{
