@@ -455,9 +455,7 @@ MEDIA QUERIES
 }
 
 /* mobile */
-.vp-height{
-	height: 100%;
-}
+
 @media (max-width: 767px){
 	body{
 		padding: 1px 0 0 0;
@@ -468,12 +466,7 @@ MEDIA QUERIES
 		position: fixed;
 		left: 0;
 		right: 0;
-	}
-	.vp-height{
-		position: relative;
-		height: 100vh;
-		margin-top: 10vh;
-		margin-bottom: 10vh;
+		bottom: 10vh;
 	}
 	h1{
 		margin: 0;
