@@ -457,8 +457,10 @@ MEDIA QUERIES
 /* mobile */
 
 @media (max-width: 767px){
+	html{height: 110vh;}
 	body{
 		padding: 1px 0 0 0;
+		height: 100vh;
 	}
 	.page-container{
 		top: 10vh;
