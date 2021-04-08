@@ -458,7 +458,7 @@ MEDIA QUERIES
 
 @media (max-width: 767px){
 	h1{
-		margin: 30px 5px;
+		margin: 0;
 	}
 	.hide-md{
 		display: none;
@@ -487,25 +487,18 @@ MEDIA QUERIES
 		display: block !important;
 		
 	}
-	.page-container{}
 	.page{
 		min-height: 80vh;
 		height: inherit;
-		/* justify-content: start; */
 	}
 	#pageTwo{
 		height: initial;
-	}
-	.page-grid{
-		/* grid-template-rows: auto; */
-	}
-	.snack-wrapper{
-		grid-template-rows:auto;
 	}
 	.topteeth, .bottomteeth{z-index: 9 !important;}
 	
 }
 @media (max-width: 500px){
+	.page-grid{grid-template-rows:1fr auto}
 	h1,
 	.message-ty .title-sticker{font-size: 50px;}
 	.dots{right: 0;}
