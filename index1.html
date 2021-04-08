@@ -26,7 +26,9 @@
 const elementHeight = document.getElementById('control-height').clientHeight;
 
 const barHeight = elementHeight - actualHeight;
-let res = document.getElementById("control-height").innerHTML = actualHeight;
+let res = document.getElementById("control-height").innerHTML = barHeight;
+document.getElementById("fix-mobile").style.minHeight = res + "100vh";
+
 console.log(res)
 
 }
@@ -42,7 +44,7 @@ window.addEventListener('resize', reportWindowSize);
 	<div class="box-line open-left"></div>
 </div>
 
-<div class="page-container">
+<div id="fix-mobile" class="page-container">
 
 	<div class="page" id="pageOne">
 		<div class="page-grid">

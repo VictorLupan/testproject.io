@@ -470,10 +470,10 @@ MEDIA QUERIES
 	}
 	.main{
 		position: fixed;
-		height: 99vh;
-	}
-	.bar{
-		position: relative;
+		height: 100vh;
+		width: 100%;
+		padding-top: 10vh;
+		padding-bottom: 10vh;
 	}
 	.page-container{
 		/* top: 10vh; */
