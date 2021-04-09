@@ -481,19 +481,19 @@ MEDIA QUERIES
 		display: none;
 	}
 	.snack-grid{
-		grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+		grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
 		display: block;
 		position: relative;
-		height: 180px;
-		width: 180px;
+		height: 270px;
+		width: 270px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.snack{
 		
 		position: absolute;
-		height: 180px;
-		width: 180px;
+		height: 270px;
+		width: 270px;
 	}
 	.snack + .snack,
 	.snack.v-visibility + .snack.v-visibility{
@@ -522,7 +522,9 @@ MEDIA QUERIES
 		height: initial;
 	}
 	.topteeth, .bottomteeth{z-index: 9 !important;}
-	
+	.topteeth, .bottomteeth{
+		width:270px;
+	}
 }
 @media (max-width: 500px){
 	h1,
