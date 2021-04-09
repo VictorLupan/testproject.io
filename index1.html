@@ -10,7 +10,7 @@
 	<title>Shazam, I am Sam.</title>
 
 	<!-- my custom styles and fonts -->
-	<link rel="stylesheet" href="css/style1.css?v10">
+	<link rel="stylesheet" href="css/style1.css?v11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700,700i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	
@@ -25,11 +25,11 @@
 		const actualHeight = window.innerHeight;
 const elementHeight = document.getElementById('control-height').clientHeight;
 
-const barHeight = actualHeight - elementHeight;
+const barHeight = elementHeight - actualHeight;
 let res = document.getElementById("control-height").innerHTML = barHeight;
-document.getElementById("fix-mobile").style.minHeight = `calc(100vh ${res}px)`;
+document.getElementById("fix-mobile").style.maxHeight = `calc(100vh ${res}px)`;
 
-console.log(`100vh ${res}px`)
+console.log(`calc(100vh + ${res}px)`)
 
 }
 window.onresize = reportWindowSize;
