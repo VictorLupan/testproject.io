@@ -27,9 +27,9 @@ const elementHeight = document.getElementById('control-height').clientHeight;
 
 const barHeight = elementHeight - actualHeight;
 let res = document.getElementById("control-height").innerHTML = barHeight;
-document.getElementById("fix-mobile").style.minHeight = res + "100vh";
+document.getElementById("fix-mobile").style.minHeight = `100vh ${res}px`;
 
-console.log(res)
+console.log(`100vh ${res}px`)
 
 }
 window.onresize = reportWindowSize;
