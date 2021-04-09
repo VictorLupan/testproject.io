@@ -27,9 +27,9 @@ const elementHeight = document.getElementById('control-height').clientHeight;
 
 const barHeight = elementHeight - actualHeight;
 let res = document.getElementById("control-height").innerHTML = barHeight;
-document.getElementById("fix-mobile").style.maxHeight = `calc(100vh - ${res}px)`;
+document.getElementById("fix-mobile").style.height = `calc(80vh - ${res}px)`;
 
-console.log(`calc(100vh + ${res}px)`)
+console.log(`calc(100vh - ${res}px)`)
 
 }
 
