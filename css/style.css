@@ -557,12 +557,12 @@ MEDIA QUERIES
 
 	.snack-grid {
 		display: grid;
-		grid-template-columns: repeat(4, 240px);
-		grid-template-rows:repeat(2, 240px);
+		grid-template-columns: repeat(4, 180px);
+		grid-template-rows:repeat(2, 180px);
 	}
 
 	.topteeth, .bottomteeth{
-		width:232px;
+		width:180px;
 	}
 
 	h4{
