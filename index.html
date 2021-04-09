@@ -18,7 +18,7 @@
 			const actualHeight = window.innerHeight;
 			const elementHeight = document.getElementById('control-height').clientHeight;
 			const barHeight = elementHeight - actualHeight;
-			let resHeight = document.getElementById("control-height").innerHTML = barHeight;
+			let resHeight = barHeight;
 			let elemFixMobile = document.getElementById("fix-mobile");
 			if (window.innerWidth < 768) {
 				elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
