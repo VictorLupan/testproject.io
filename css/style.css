@@ -528,7 +528,7 @@ MEDIA QUERIES
 }
 @media (max-width: 500px){
 	h1,
-	.message-ty .title-sticker{font-size: 50px;}
+	.message-ty .title-sticker{font-size: 60px;}
 	h1{margin: 0 0 20px;}
 	.dots{right: 0;}
 	.dot{
