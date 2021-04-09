@@ -32,8 +32,10 @@ document.getElementById("fix-mobile").style.maxHeight = `calc(100vh ${res}px)`;
 console.log(`calc(100vh + ${res}px)`)
 
 }
-window.onresize = reportWindowSize;
+
+window.onresize = reportWindowSize;4
 window.addEventListener('resize', reportWindowSize);
+window.addEventListener('load', reportWindowSize);
 	</script>
 
 <div class="main">
