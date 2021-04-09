@@ -507,19 +507,15 @@ MEDIA QUERIES
 		/*scroll-snap-type: y proximity;*/
 	}
 	.page{
-		/*min-height: 80vh;*/
-		height: inherit;
-		/* justify-content: start; */
+		height: 100%;
 	}
 	#pageTwo{
 		height: initial;
 	}
 	.page-grid{
-		/*grid-template-rows: 1fr auto;*/
 		grid-template-rows: auto;
 	}
 	.snack-wrapper{
-		/*grid-template-rows:0 auto 5% auto;*/
 		grid-template-rows:0 auto 0 auto;
 		height: initial;
 	}
