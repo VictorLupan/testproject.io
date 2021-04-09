@@ -260,7 +260,7 @@ function closeTeeth(thisObj, callback){
   }, 2000);
 }*/
 
-function zZz(thisObj, countClick){
+/*function zZz(thisObj, countClick){
   var snackActive = $(".snack.active").length;
   if(windowWidth >= tabletView){
     countClick = 8;
@@ -271,7 +271,7 @@ function zZz(thisObj, countClick){
   }
   console.log(snackActive)
   console.log(countClick)
-}
+}*/
 
 // function showMessage(thisObj){
 //   var snackActive = $(".snack.active").length;
