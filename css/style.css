@@ -519,6 +519,7 @@ MEDIA QUERIES
 	}
 	#pageTwo{
 		height: initial;
+		justify-content: start;
 		/* scroll-snap-align: start end; */
 	}
 	.page-grid{
