@@ -1,7 +1,7 @@
 
 var config = {
   pathFolder : window.location.pathname,
-  totalImages: 32,
+  totalImages: 33,
   extension  : ".svg",
   dir : {
     logos   : "images/logos/",
