@@ -556,7 +556,7 @@ MEDIA QUERIES
 @media (max-width: 500px){
 	h1,
 	.message-ty .title-sticker{font-size: 60px;}
-	h1{margin: 0 0 20px;}
+	h1{margin: 0}
 	.dots{right: 0;}
 	.header{top: 1vh;}
 	.footer{bottom: 1vh;}
