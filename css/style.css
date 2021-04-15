@@ -496,7 +496,7 @@ MEDIA QUERIES
 		padding-top: 10vh;
 		padding-bottom: 10vh;
 	}
-	h1{font-size: 60px;margin: 30px 5px;text-align: left;max-width: 270px;margin-left: auto;margin-right: auto;}
+	h1{font-size: 50px;margin: 30px 5px;text-align: left;max-width: 270px;margin-left: auto;margin-right: auto;}
 	.page-container{
 		height: 80vh;
 		margin: 0;
@@ -560,7 +560,7 @@ MEDIA QUERIES
 }
 @media (max-width: 500px){
 	h1,
-	.message-ty .title-sticker{font-size: 60px;}
+	.message-ty .title-sticker{font-size: 50px;}
 	h1{margin: 0 auto}
 	.dots{right: 0;}
 }
