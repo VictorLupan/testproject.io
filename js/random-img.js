@@ -49,7 +49,7 @@ console.log(images)
         jQuery.ajax({
           url: path,
           type: 'HEAD',
-          //async : false,
+          async : false,
           error: function() {   
           },
           success: function() {
