@@ -520,7 +520,7 @@ MEDIA QUERIES
 	#pageTwo{
 		height: initial;
 		justify-content: start;
-		/* scroll-snap-align: start end; */
+		scroll-snap-align: start end;
 	}
 	.page-grid{
 		grid-template-rows: 1fr auto;
