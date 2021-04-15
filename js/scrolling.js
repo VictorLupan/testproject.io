@@ -162,6 +162,7 @@ function setSnacks(messVisible){
 }, 100);
 
   $('.snack').each(function(){
+    if (windowWidth >= mobileView) {
   		$(this).attr("style",browserPrefix+"animation: popIn 600ms ease "+time+"ms 1 normal forwards;");
   		if(chartOrder==4){
   			time=50;
@@ -172,6 +173,7 @@ function setSnacks(messVisible){
         $(this).addClass("v-visibility");
         $(this).removeAttr('style');
       });
+    }
   });
   
 }

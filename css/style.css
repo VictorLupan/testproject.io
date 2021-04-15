@@ -516,10 +516,14 @@ MEDIA QUERIES
 		margin-right: auto;
 	}
 	.snack{
-		
+		opacity: 1;
 		position: absolute;
 		height: 270px;
 		width: 270px;
+	}
+	.snack:first-child{
+		opacity: 0;
+		animation: popIn 600ms ease 100ms 1 normal forwards
 	}
 	.snack + .snack,
 	.snack.v-visibility + .snack.v-visibility{
@@ -528,7 +532,11 @@ MEDIA QUERIES
 	.snack.show,
 	.snack.v-visibility.show{
 		display: block !important;
-		
+	}
+	.snack.show .snack-item,
+	.snack.v-visibility.show .snack-item{
+		opacity: 0;
+		animation: popIn 600ms ease 100ms 1 normal forwards
 	}
 	.page{
 		min-height: 100%;
