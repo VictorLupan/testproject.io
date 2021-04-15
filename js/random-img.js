@@ -1,7 +1,7 @@
 
 var config = {
   pathFolder : window.location.pathname,
-  totalImages: 16,
+  totalImages: 32,
   extension  : ".svg",
   dir : {
     logos   : "images/logos/",
@@ -49,7 +49,7 @@ console.log(images)
         jQuery.ajax({
           url: path,
           type: 'HEAD',
-          async : false,
+          //async : false,
           error: function() {   
           },
           success: function() {

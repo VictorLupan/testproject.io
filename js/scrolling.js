@@ -166,11 +166,7 @@ function setSnacks(messVisible){
   		if(chartOrder==4){
   			time=50;
   		}
-      if (windowWidth <= mobileView) {
-        time += 1;
-      }else{
-        time += 100;
-      }
+  		time += 100;
   		chartOrder += 1;
       $(this).on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).addClass("v-visibility");
