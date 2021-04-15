@@ -17,7 +17,6 @@ body {
 }
 
 h1{
-	font-style: italic;
 	font-size: 80px;
 	text-align:center;
 	margin:0px;
@@ -497,9 +496,7 @@ MEDIA QUERIES
 		padding-top: 10vh;
 		padding-bottom: 10vh;
 	}
-	h1{font-size: 60px;
-		margin: 30px 5px;
-	}
+	h1{font-size: 60px;margin: 30px 5px;text-align: left;max-width: 270px;margin-left: auto;margin-right: auto;}
 	.page-container{
 		height: 80vh;
 		margin: 0;
@@ -556,10 +553,13 @@ MEDIA QUERIES
 @media (max-width: 500px){
 	h1,
 	.message-ty .title-sticker{font-size: 60px;}
-	h1{margin: 0}
+	h1{margin: 0 auto}
 	.dots{right: 0;}
+}
+@media (max-width: 500px), (max-height: 730px){
 	.header{top: 1vh;}
 	.footer{bottom: 1vh;}
+	#pageOne{margin-bottom: 30px;}
 }
 @media (max-width: 350px){
 	h1,

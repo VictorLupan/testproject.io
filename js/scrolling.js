@@ -166,7 +166,11 @@ function setSnacks(messVisible){
   		if(chartOrder==4){
   			time=50;
   		}
-  		time += 100;
+      if (windowWidth <= mobileView) {
+        time += 1;
+      }else{
+        time += 100;
+      }
   		chartOrder += 1;
       $(this).on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).addClass("v-visibility");
@@ -221,6 +225,8 @@ $(document).on('click', 'a[href^="#"]', function(e){
   }
 });
 
+
+
 function openTeeth(thisObj){
   /*var chosenResult=resultArray[Math.floor(Math.random()*resultArray.length)];
   $('.snack-item', thisObj).attr("src","images/results/"+chosenResult);*/
@@ -258,9 +264,9 @@ function closeTeeth(thisObj, callback){
 };
 
 function resetImgList(){
-  var itemImageSnacks = images.snacks[Math.floor(Math.random()*images.snacks.length)];
+  //var itemImageSnacks = images.snacks[Math.floor(Math.random()*images.snacks.length)];
   $('.snack').each(function(){    
-    $(".result-item", this).removeClass("result-item").addClass("snack-item").attr("src",itemImageSnacks);
+    $(".result-item", this).removeClass("result-item").addClass("snack-item").attr("src","");
   });
   if(!$(".message-ty").is(":visible") && $(".snack-grid").is(":visible")){
     $(".message-ty").addClass("show-message").show();
@@ -289,8 +295,9 @@ function tabletAction(){
 function mobileAction(thisObj){
   var snackActive = $(".snack.active").length;
   if (windowWidth <= mobileView) {
+    
     setTimeout(function(){ 
-      $(thisObj).addClass("hide-md-active").removeClass("show").next().addClass("show");
+      $(thisObj).addClass("hide-md-active").removeClass("show").next().addClass("show");  
       if( snackActive == 4){
         resetImgList();
     }
@@ -311,7 +318,7 @@ function desktopAction(thisObj){
     }, 2000);
   }  
 }
-
+//$(this).hasClass("active") ? $(this).off('click') : 
 $(".snack").on('click', function(){
   
   
@@ -323,7 +330,8 @@ $(".snack").on('click', function(){
   tabletAction($(this));
 
   closeTeeth($(this), openTeeth);
-    
+  console.log("click");
+  
 });
 
 
