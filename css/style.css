@@ -61,7 +61,7 @@ a{
 	/* scroll-snap-type: mandatory;
 	-webkit-scroll-snap-points-y: repeat(80vh);
 	-webkit-scroll-snap-points-y: repeat(80vh); */
-	/* scroll-snap-type: y mandatory; */
+	scroll-snap-type: y mandatory;
 }
 .ty-page{
 	overflow: hidden;
@@ -75,7 +75,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* scroll-snap-align: start; */
+	scroll-snap-align: start;
 	min-height:100%;
 	height: auto;
 	position:relative;
@@ -486,6 +486,7 @@ MEDIA QUERIES
 	.page-container{
 		height: 80vh;
 		margin: 0;
+		scroll-snap-type:y proximity;
 	}
 	.hide-md,
 	.hide-md-active{
