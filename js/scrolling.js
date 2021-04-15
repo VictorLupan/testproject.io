@@ -343,7 +343,7 @@ and in the direction of the scroll.
 
 /* move the dot the amount that was scrolled in the correct direction */
   if(dotPlacement <= maxMoveSpace || dotPlacement <= 0){
-    if (windowWidth <= mobileView) {
+    if (windowWidth <= tabletView) {
       maxMoveSpace = 14
       aMoveDot.css({'top': dotPlacement});
     }

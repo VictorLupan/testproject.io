@@ -461,6 +461,23 @@ MEDIA QUERIES
 	.big img{
 		height:80px;
 	}
+	.dots{height: 59px;}
+	.dot{
+		height: 6px;
+		width: 6px;
+		background-color: #38383f;
+		margin: 0 10px;
+	}
+	.second-screen{
+		position: absolute;
+		bottom: 0;
+	}
+	#filled-dot{
+		height: 45px;
+		width: 6px;
+		border-radius: 3px;
+		margin: 0 10px;
+	}
 }
 
 /* mobile */
@@ -534,23 +551,6 @@ MEDIA QUERIES
 	.topteeth, .bottomteeth{z-index: 9 !important;}
 	.topteeth, .bottomteeth{
 		width:270px;
-	}
-	.dots{height: 59px;}
-	.dot{
-		height: 6px;
-		width: 6px;
-		background-color: #38383f;
-		margin: 0 10px;
-	}
-	.second-screen{
-		position: absolute;
-		bottom: 0;
-	}
-	#filled-dot{
-		height: 45px;
-		width: 6px;
-		border-radius: 3px;
-		margin: 0 10px;
 	}
 }
 @media (max-width: 500px){
