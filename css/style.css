@@ -1,4 +1,5 @@
 @import url(../fonts/stylesheet.css);
+@import url(../fonts/bison/stylesheet.css);
 *{
  	box-sizing: border-box;
 }
@@ -20,7 +21,7 @@ h1{
 	font-size: 80px;
 	text-align:center;
 	margin:0px;
-	font-family: 'bebas_neueregular';
+	font-family: 'bisonbold_itallic';
 }
 
 h2{
@@ -30,6 +31,7 @@ h2{
 }
 /*social card text*/
 h3{
+	font-family: 'bisonbold';
 	font-size:34px;
 	text-align:left;
 	margin:0;
@@ -373,7 +375,7 @@ a{
 	font-size: 60px;
 	margin-bottom: 25px;
 	font-weight: 400;
-	font-family: 'bebas_neueregular';
+	font-family: 'bisondemibold';
 }
 .message-ty .title-sticker:before{
 	background-color: #3b3b3c;
@@ -392,6 +394,7 @@ a{
 	text-align: center;
 	font-size: 26px;
 	text-transform: none;
+	font-family: 'Open Sans', sans-serif;
 }
 .subtitle a{
 	color: #3B3B3C;
@@ -530,17 +533,29 @@ MEDIA QUERIES
 	.topteeth, .bottomteeth{
 		width:270px;
 	}
+	.dots{height: 59px;}
+	.dot{
+		height: 6px;
+		width: 6px;
+		background-color: #38383f;
+		margin: 0 10px;
+	}
+	.second-screen{
+		position: absolute;
+		bottom: 0;
+	}
+	#filled-dot{
+		height: 45px;
+		width: 6px;
+		border-radius: 3px;
+		margin: 0 10px;
+	}
 }
 @media (max-width: 500px){
 	h1,
 	.message-ty .title-sticker{font-size: 60px;}
 	h1{margin: 0 0 20px;}
 	.dots{right: 0;}
-	.dot{
-		width: 20px;
-		height: 20px;
-		margin: 20px 10px;
-	}
 	.header{top: 1vh;}
 	.footer{bottom: 1vh;}
 }
