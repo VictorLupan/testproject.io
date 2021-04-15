@@ -76,7 +76,8 @@ a{
 	flex-direction: column;
 	justify-content: center;
 	scroll-snap-align: start;
-	height:80vh;
+	min-height:100%;
+	block-size: fit-content;
 	position:relative;
 }
 
@@ -104,14 +105,15 @@ a{
 .snack-wrapper{
 	grid-column:2/3;
 	display: grid;
-	grid-template-rows: 5% auto 5% auto;
+	/*grid-template-rows: 5% auto 5% auto;*/
 	height: 100%;
 }
 
 .message{
-	grid-row:2/3;
+	/*grid-row:2/3;*/
 	justify-content: center;
 	align-self: center;
+	margin: 0 0 4%;
 }
 
 .ty-page .message{
@@ -120,7 +122,7 @@ a{
 
 
 .snack-grid{
-	grid-row:4/5;
+	/*grid-row:4/5;*/
 	display: grid;
 	grid-template-columns: repeat(4, 180px);
 	grid-template-rows:repeat(2, 180px);
@@ -512,15 +514,12 @@ MEDIA QUERIES
 		display: block !important;
 		
 	}
-	.page-container{
-		scroll-snap-align: end;
-		/*scroll-snap-type: y proximity;*/
-	}
 	.page{
-		height: 100%;
+		min-height: 100%;
 	}
 	#pageTwo{
 		height: initial;
+		scroll-snap-align: start end;
 	}
 	.page-grid{
 		grid-template-rows: 1fr auto;
