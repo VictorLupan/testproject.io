@@ -58,9 +58,9 @@ a{
 	height:80vh;
 	margin-top:10vh;
 	margin-bottom: 10vh;
-	scroll-snap-type: mandatory;
+	/* scroll-snap-type: mandatory;
 	-webkit-scroll-snap-points-y: repeat(80vh);
-	-webkit-scroll-snap-points-y: repeat(80vh);
+	-webkit-scroll-snap-points-y: repeat(80vh); */
 	scroll-snap-type: y mandatory;
 }
 .ty-page{
@@ -519,7 +519,7 @@ MEDIA QUERIES
 	}
 	#pageTwo{
 		height: initial;
-		scroll-snap-align: start end;
+		/* scroll-snap-align: start end; */
 	}
 	.page-grid{
 		grid-template-rows: 1fr auto;
