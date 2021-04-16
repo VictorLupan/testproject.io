@@ -55,13 +55,14 @@ console.log(images)
           success: function() {
             images[type].push(path)
           },
-          complete:function(){setCookie(type,encodeURI(JSON.stringify(images[type])),60);}
+          complete:function(){
+            setCookie(type,encodeURI(JSON.stringify(images[type])),60);
+          }
         });    
       }
     
-    console.log("data arrived")
-    
-    console.log(encodeURI(JSON.stringify(images[type])))
+    console.log("data arrived")    
+    //console.log(encodeURI(JSON.stringify(images[type])))
   }
 
 
