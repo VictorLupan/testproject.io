@@ -41,7 +41,7 @@ console.log(images)
     
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   }
-  function parseImages(type){
+  async function parseImages(type){
     images[type] = [];
     for(let i = 1; i < config.totalImages; i++){
         var path = config.pathFolder + config.dir[type] + i + config.extension;
@@ -62,7 +62,8 @@ console.log(images)
       }
       setCookie(type,encodeURI(JSON.stringify(images[type])),60);      
     console.log("data arrived")    
-    //console.log(encodeURI(JSON.stringify(images[type])))
+    console.debug(config.totalImages);
+    console.log(encodeURI(JSON.stringify(images[type])))
   }
 
 
