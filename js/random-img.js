@@ -49,18 +49,18 @@ console.log(images)
         jQuery.ajax({
           url: path,
           type: 'HEAD',
-          //async : false,
+          async : false,
           error: function() {   
           },
           success: function() {
             images[type].push(path)
           },
           complete:function(){
-            setCookie(type,encodeURI(JSON.stringify(images[type])),60);
+            
           }
         });    
       }
-    
+      setCookie(type,encodeURI(JSON.stringify(images[type])),60);      
     console.log("data arrived")    
     //console.log(encodeURI(JSON.stringify(images[type])))
   }
