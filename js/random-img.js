@@ -62,7 +62,6 @@ console.log(images)
       }
       setCookie(type,encodeURI(JSON.stringify(images[type])),60);      
     console.log("data arrived")    
-    console.debug(config.totalImages);
     console.log(encodeURI(JSON.stringify(images[type])))
   }
 

@@ -299,7 +299,7 @@ function mobileAction(thisObj){
       if( snackActive == 4){
         resetImgList();
     }
-    }, 1100);
+    }, 2000);
   }  
 }
 function desktopAction(thisObj){
@@ -328,7 +328,7 @@ $(".snack").on('click', function(){
   tabletAction($(this));
 
   closeTeeth($(this), openTeeth);
-  console.log("click");}
+  }
   
 });
 
