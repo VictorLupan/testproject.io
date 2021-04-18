@@ -419,7 +419,6 @@ MEDIA QUERIES
 
 	.page-grid {
 		grid-template-columns: 10% auto 10%;
-		/* grid-template-rows: 1fr 20px 20px 1fr; */
 		align-items: center;
 		margin-bottom: 30px;
 		height:100%;
@@ -540,6 +539,7 @@ MEDIA QUERIES
 	}
 	.page{
 		min-height: 100%;
+		position: relative;
 	}
 	#pageTwo{
 		height: initial;
@@ -548,6 +548,12 @@ MEDIA QUERIES
 	}
 	.page-grid{
 		grid-template-rows: 1fr auto;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		width: 100%;
 	}
 	.snack-wrapper{
 		grid-template-rows:auto;
