@@ -499,7 +499,6 @@ MEDIA QUERIES
 	.page-container{
 		height: 80vh;
 		margin: 0;
-		scroll-snap-type:y proximity;
 	}
 	.hide-md,
 	.hide-md-active{
@@ -542,9 +541,10 @@ MEDIA QUERIES
 		position: relative;
 	}
 	#pageTwo{
-		height: initial;
+		height: 100%;
 		justify-content: start;
-		scroll-snap-align: start end;
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 	.page-grid{
 		grid-template-rows: 1fr auto;
