@@ -554,6 +554,7 @@ MEDIA QUERIES
 		transform: translate(-50%,-50%);
 		-webkit-transform: translate(-50%,-50%);
 		width: 100%;
+		height: initial;
 	}
 	.snack-wrapper{
 		grid-template-rows:auto;
