@@ -58,8 +58,8 @@ a{
 	margin-top:10vh;
 	margin-bottom: 10vh;
 	scroll-snap-type: mandatory;
-	-webkit-scroll-snap-points-y: repeat(80vh);
-	-webkit-scroll-snap-points-y: repeat(80vh);
+	-webkit-scroll-snap-points-y: repeat(300px);
+	-webkit-scroll-snap-points-y: repeat(300px);
 	scroll-snap-type: y mandatory;
 	-webkit-scroll-snap-type: y mandatory;
 }
