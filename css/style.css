@@ -57,10 +57,11 @@ a{
 	height:80vh;
 	margin-top:10vh;
 	margin-bottom: 10vh;
-	/* scroll-snap-type: mandatory;
+	scroll-snap-type: mandatory;
 	-webkit-scroll-snap-points-y: repeat(80vh);
-	-webkit-scroll-snap-points-y: repeat(80vh); */
+	-webkit-scroll-snap-points-y: repeat(80vh);
 	scroll-snap-type: y mandatory;
+	-webkit-scroll-snap-type: y mandatory;
 }
 .ty-page{
 	overflow: hidden;
@@ -541,10 +542,8 @@ MEDIA QUERIES
 		position: relative;
 	}
 	#pageTwo{
-		height: 100%;
+		height: initial;
 		justify-content: start;
-		overflow-y: auto;
-		overflow-x: hidden;
 	}
 	.page-grid{
 		grid-template-rows: 1fr auto;
