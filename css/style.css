@@ -542,9 +542,7 @@ MEDIA QUERIES
 		position: relative;
 	}
 	#pageTwo{
-		height: 100%;
-		overflow-y: auto;
-		overflow-x: hidden;
+		height: initial;
 		justify-content: start;
 	}
 	.page-grid{
