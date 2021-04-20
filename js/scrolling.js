@@ -289,22 +289,21 @@ function tabletAction(){
     }, 2000);
   }
 }
-// if (windowWidth <= mobileView) {
-//     function scrollMobile(){
-//       $('#fix-mobile').on('scroll', function() {
-//         var hT = $('#pageTwo').offset().top - 80,
-//             hH = $('#pageTwo').outerHeight(),
-//             hOT = $('#pageOne').offset().top - 80,
-//             hO = $('#pageOne').outerHeight(),
-//             wH = $('#fix-mobile').height(),
-//             wS = $(this).scrollTop();
-//       });      
-//     }
-//     if(wS >= 0){
-//       $('#fix-mobile').animate({scrollTop: hT}, 800);
-//       $(this).off('scroll')
-//     }
-// } 
+if (windowWidth <= mobileView) {
+  let wS = 0,
+        hO = $('#pageOne').outerHeight(),
+        hOT = $('#pageOne').offset().top - 81;
+  $('#fix-mobile').on('scroll', function() {
+    wS = $(this).scrollTop();
+  if(wS > (hOT + hO)){
+    $('#fix-mobile').css('scroll-snap-type','none')
+    console.log(hOT + hO)
+  }else{
+    $('#fix-mobile').css('scroll-snap-type','y mandatory')
+  }
+ });  
+    
+} 
 function mobileAction(thisObj){
   var snackActive = $(".snack.active").length;
   if (windowWidth <= mobileView) {
