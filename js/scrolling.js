@@ -297,7 +297,6 @@ if (windowWidth <= mobileView) {
     wS = $(this).scrollTop();
   if(wS >= (hOT + hO)){
     $('#fix-mobile').css('scroll-snap-type','none');
-    console.log(hOT + hO)
   }else{
     $('#fix-mobile').css('scroll-snap-type','y mandatory');
   }
