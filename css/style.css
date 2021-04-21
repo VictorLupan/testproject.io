@@ -460,7 +460,8 @@ MEDIA QUERIES
 	.big img{
 		height:80px;
 	}
-	.dots{height: 59px;}
+	.dots{height: 59px;
+	display: none;}
 	.dot{
 		height: 6px;
 		width: 6px;
