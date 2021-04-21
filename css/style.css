@@ -561,7 +561,7 @@ MEDIA QUERIES
 		height: initial;		
 	}
 	.wrapper{min-height: 275px;position: relative;}
-	.topteeth, .bottomteeth{z-index: 9 !important;}
+	.topteeth{z-index: 10 !important;} .bottomteeth{z-index: 9 !important;}
 	.topteeth, .bottomteeth{
 		width:270px;
 	}
