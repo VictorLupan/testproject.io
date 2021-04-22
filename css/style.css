@@ -460,7 +460,8 @@ MEDIA QUERIES
 	.big img{
 		height:80px;
 	}
-	.dots{height: 59px;}
+	.dots{height: 59px;
+	display: none;}
 	.dot{
 		height: 6px;
 		width: 6px;
@@ -560,7 +561,7 @@ MEDIA QUERIES
 		height: initial;		
 	}
 	.wrapper{min-height: 275px;position: relative;}
-	.topteeth, .bottomteeth{z-index: 9 !important;}
+	.topteeth{z-index: 10 !important;} .bottomteeth{z-index: 9 !important;}
 	.topteeth, .bottomteeth{
 		width:270px;
 	}
