@@ -583,6 +583,26 @@ MEDIA QUERIES
 	.header{top: 1vh;}
 	.footer{bottom: 1vh;}
 	#pageOne{margin-bottom: 30px;}
+	.page{
+		justify-content: flex-start;
+	}
+	h1{
+		max-width: 405px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.page-grid{
+		height: 100%;
+	}
+	.snack,
+	.snack-grid{
+		height: 180px;
+		width: 180px;
+	}
+	.social-wrapper{
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
 }
 @media (max-width: 350px){
 	h1,
