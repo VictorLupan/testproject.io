@@ -482,7 +482,82 @@ MEDIA QUERIES
 
 /* mobile */
 #control-height{display: none;}
-@media (max-width: 767px){
+@media only screen 
+and (min-device-width: 375px)
+and (max-device-width: 926px)
+and (orientation: portrait) {
+	#control-height {
+		height: 100vh;
+		width: 0;
+		top: 0;
+		display: block;
+		position: absolute;
+	}
+	.main{
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
+	h1{font-size: 50px;margin: 30px 5px;text-align: left;max-width: 270px;margin-left: auto;margin-right: auto;}
+	.page-container{
+		height: 80vh;
+		margin: 0;
+	}
+	.hide-md,
+	.hide-md-active{
+		display: none;
+	}
+	.snack-grid{
+		grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
+		display: block;
+		position: relative;
+		height: 270px;
+		width: 270px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.snack{
+		opacity: 1;
+		position: absolute;
+		height: 270px;
+		width: 270px;
+	}
+}
+@media only screen 
+and (min-device-width: 375px)
+and (max-device-width: 926px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+	.page{
+		justify-content: flex-start;
+		height: initial;
+	}
+	h1{
+		max-width: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.page-grid{
+		height: 100%;
+	}
+	.snack{
+		height: 180px;
+		width: 180px;
+		opacity: 1 !important;
+	}
+	.snack.hide-md,
+	.snack.landscape-hide{
+		display: none;
+	}
+	.social-wrapper{
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+}
+/* @media  (max-width: 767px){
 	#control-height {
 		height: 100vh;
 		width: 0;
@@ -572,7 +647,8 @@ MEDIA QUERIES
 		left: 0;
 		right: 0;
 	}
-}
+}  */
+
 @media (max-width: 500px){
 	h1,
 	.message-ty .title-sticker{font-size: 50px;}
@@ -586,36 +662,7 @@ MEDIA QUERIES
 	#pageOne{margin-bottom: 30px;}
 	
 }
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
-	.page{
-		justify-content: flex-start;
-		height: initial;
-	}
-	h1{
-		max-width: 100%;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	.page-grid{
-		height: 100%;
-	}
-	.snack{
-		height: 180px;
-		width: 180px;
-		opacity: 1;
-	}
-	.snack.hide-md,
-	.snack.landscape-hide{
-		display: none;
-	}
-	.social-wrapper{
-		padding-top: 5px;
-		padding-bottom: 10px;
-	}
-}
+
 @media (max-width: 350px){
 	h1,
 	.message-ty .title-sticker{font-size: 40px;}
