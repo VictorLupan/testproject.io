@@ -18,23 +18,23 @@
     
 		function reportWindowSize() {
 			
-			let actualHeight = window.innerHeight;
-			let elementHeight = document.getElementById('control-height').clientHeight;
-			let barHeight = elementHeight - actualHeight;
+			const actualHeight = window.innerHeight;
+			const elementHeight = document.getElementById('control-height').clientHeight;
+			const barHeight = elementHeight - actualHeight;
 			let resHeight = Math.abs(barHeight);
 			let elemFixMobile = document.getElementById("fix-mobile");
 			if ((window.innerWidth < 768) && ( window.innerWidth < window.innerHeight)) {
 				
 		elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
-		console.log('p' )
+		console.log(elementHeight + "-" + window.innerHeight + "  -- p" + elementHeight)
 	
 				
 			}else if( window.innerWidth > window.innerHeight ||
         Math.abs(elementHeight - window.innerHeight) > 100){
-			elementHeight = window.innerHeight;
+			//elementHeight = window.innerHeight;
 			elemFixMobile.style.height = `calc(80vh - ${window.innerHeight} 'px'`;
 
-		console.log('l'+ elementHeight + window.innerHeight)
+			console.log(elementHeight + "-" + window.innerHeight + "  -- l" + elementHeight)
 			}else{
 				elemFixMobile.style.removeProperty("height");
 			}

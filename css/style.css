@@ -489,7 +489,7 @@ and (orientation: landscape) {
 /* mobile */
 #control-height{display: none;}
 @media only screen 
-and (min-device-width: 375px)
+and (min-device-width: 320px)
 and (max-device-width: 767px)
 and (orientation: portrait) {
 	#control-height {
@@ -590,6 +590,13 @@ and (max-device-width: 926px)
 , (-webkit-min-device-pixel-ratio: 2)
 , (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) { 
+	#control-height {
+		height: 100vh;
+		width: 0;
+		top: 0;
+		display: block;
+		position: absolute;
+	}
 	.social-grid{grid-template-columns: repeat(2, 1fr);grid-gap:30px}
 	.dots{display: none;}
 	.page{
