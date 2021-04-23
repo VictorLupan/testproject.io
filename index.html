@@ -34,7 +34,7 @@
 				
 			}else if( window.innerWidth > window.innerHeight ||
         Math.abs(elementHeight - window.innerHeight) > 100){
-			console.log(elementHeight)
+			textCount.innerHTML = resHeight
 			elementHeight = window.innerHeight;
 			resHeight = elementHeight - actualHeight;
 			elemFixMobile.style.height = `calc(80vh - ${resHeight} 'px'`;
