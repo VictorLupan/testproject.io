@@ -18,9 +18,9 @@
     
 		function reportWindowSize() {
 			
-			const actualHeight = window.innerHeight;
+			let actualHeight = window.innerHeight;
 			let elementHeight = document.getElementById('control-height').clientHeight;
-			const barHeight = elementHeight - actualHeight;
+			let barHeight = elementHeight - actualHeight;
 			let resHeight = Math.abs(barHeight);
 			let elemFixMobile = document.getElementById("fix-mobile");
 			if ((window.innerWidth < 768) && ( window.innerWidth < window.innerHeight)) {
@@ -33,7 +33,8 @@
         Math.abs(elementHeight - window.innerHeight) > 100){
 			console.log(elementHeight)
 			elementHeight = window.innerHeight;
-			elemFixMobile.style.height = `calc(80vh - ${window.innerHeight - actualHeight} 'px'`;
+			resHeight = elementHeight - actualHeight;
+			elemFixMobile.style.height = `calc(80vh - ${resHeight} 'px'`;
 
 			console.log(elementHeight + "-" + window.innerHeight + "  -- l-")
 			}else{
