@@ -599,6 +599,7 @@ and (orientation: landscape) {
 		position: relative;
 	}
 	.wrapper{
+		min-height: 297px;
 		margin: 0 -2%;
 	}
 	h1{
@@ -609,6 +610,7 @@ and (orientation: landscape) {
 	}
 	.snack-grid{
 		grid-template-columns: repeat( auto-fit, minmax(172px, 1fr) );
+		grid-template-rows: none;
 		grid-gap: 10px;
 	}
 	.page-grid{

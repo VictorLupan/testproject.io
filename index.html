@@ -23,10 +23,10 @@
 			const barHeight = elementHeight - actualHeight;
 			let resHeight = Math.abs(barHeight);
 			let elemFixMobile = document.getElementById("fix-mobile");
-			if (window.innerWidth < 768) {
+			if ((window.innerWidth < 768) && ( window.innerWidth < window.innerHeight)) {
 				
 		elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
-		console.log('p')
+		console.log('p' + window.innerHeight + this.lastHeight)
 	
 				
 			}else if( window.innerWidth > window.innerHeight ||
