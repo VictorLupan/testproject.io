@@ -530,8 +530,8 @@ and (orientation: portrait) {
 	.snack{
 		opacity: 1;
 		position: absolute;
-		height: 270px;
-		width: 270px;
+		height: 270px !important;
+		width: 270px !important;
 	}
 	.snack:first-child{
 		opacity: 0;
