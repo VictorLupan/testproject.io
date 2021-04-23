@@ -21,7 +21,7 @@
 			let resHeight = Math.abs(barHeight);
 			let elemFixMobile = document.getElementById("fix-mobile");
 			if (window.innerWidth < 768) {
-				elemFixMobile.style.height = `calc(80vh + ${resHeight}px)`;
+				elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
 			}else{
 				elemFixMobile.style.removeProperty("height");
 			}
