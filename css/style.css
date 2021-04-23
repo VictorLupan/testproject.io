@@ -623,10 +623,10 @@ and (orientation: landscape) {
 		margin-left: auto;
 		margin-right: auto;
 		opacity: 1 !important;
-	}
+	 }/*
 	.page-container{
 		max-height: calc(80vh - 30px);
-	}
+	} */
 	.snack.hide-md,
 	.snack.landscape-hide{
 		display: none;
