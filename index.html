@@ -32,8 +32,8 @@
 		console.log(elementHeight + "-" + window.innerHeight + "  -- p")
 	
 				
-			}else if( window.innerWidth > window.innerHeight ||
-        Math.abs(elementHeight - window.innerHeight) > 100){
+			}else if( window.innerWidth > window.innerHeight &&
+        (window.innerWidth < 926)){
 			
 			let elementHeight = document.getElementById('control-height').clientHeight;
 			let resHeight = elementHeight - actualHeight;
