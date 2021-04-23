@@ -26,14 +26,15 @@
 			if ((window.innerWidth < 768) && ( window.innerWidth < window.innerHeight)) {
 				
 		elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
-		console.log('p' + window.innerHeight + this.lastHeight)
+		console.log('p' )
 	
 				
 			}else if( window.innerWidth > window.innerHeight ||
-        Math.abs(this.lastHeight - window.innerHeight) > 100){
+        Math.abs(this.elementHeight - window.innerHeight) > 100){
+			this.elementHeight = window.innerHeight;
 			elemFixMobile.style.height = `calc(80vh - ${window.innerHeight} 'px'`;
-        this.lastHeight = window.innerHeight;
-		console.log('l')
+
+		console.log('l'+ elementHeight + window.innerHeight)
 			}else{
 				elemFixMobile.style.removeProperty("height");
 			}
