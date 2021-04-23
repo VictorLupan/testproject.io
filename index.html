@@ -22,10 +22,13 @@
 			let elementHeight = document.getElementById('control-height').clientHeight;
 			let barHeight = elementHeight - actualHeight;
 			let resHeight = Math.abs(barHeight);
+			let textCount = document.getElementById('control-height')
 			let elemFixMobile = document.getElementById("fix-mobile");
+			
 			if ((window.innerWidth < 768) && ( window.innerWidth < window.innerHeight)) {
-				console.log(elementHeight)	
+				console.log(barHeight)	
 		elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
+		textCount.innerHTML = resHeight
 		console.log(elementHeight + "-" + window.innerHeight + "  -- p")
 	
 				
