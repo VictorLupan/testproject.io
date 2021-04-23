@@ -275,20 +275,18 @@ function resetImgList(){
   }
   $(".snack").removeClass("v-visibility active hide-md-active show");
 }
-function showHideBlocks(){
-  
-}
 
-function tabletAction(){
-  var snackActive = $(".snack.active").length;
-  if (windowWidth <= tabletView && windowWidth > mobileView) {
-    setTimeout(function(){ 
-      if( snackActive == 6){
-        resetImgList();
-    }
-    }, 2000);
-  }
-}
+// function tabletAction(){
+//   var snackActive = $(".snack.active").length;
+//   if (windowWidth <= tabletView && windowWidth > mobileView) {
+//     setTimeout(function(){ 
+//       if( snackActive == 6){
+//         resetImgList();
+//     }
+//     }, 2000);
+//   }
+// }
+
 if (windowWidth <= mobileView) {
   let wS = 0,
         hO = $('#pageOne').outerHeight(),
@@ -301,55 +299,66 @@ if (windowWidth <= mobileView) {
     $('#fix-mobile').css('scroll-snap-type','y mandatory');
   }
  });  
-    
 } 
-$(window).on("deviceorientation", function() {
-  if (window.matchMedia("(orientation: portrait)").matches) {
-    alert("Device is in portrait mode")
-  }
-  if (window.matchMedia("(orientation: landscape)").matches) {
-    alert("Device is in landscape mode")
-  }
-});
-function mobileAction(thisObj){
-  var snackActive = $(".snack.active").length;
-  if (windowWidth <= mobileView) {
-    setTimeout(function(){ 
-      $(thisObj).addClass("hide-md-active").removeClass("show").next().addClass("show"); 
+
+// function mobileAction(thisObj){
+//   var snackActive = $(".snack.active").length;
+//   if (windowWidth <= mobileView) {
+//     setTimeout(function(){ 
+//       $(thisObj).addClass("hide-md-active").removeClass("show").next().addClass("show"); 
       
-        if( snackActive == 4){
-          resetImgList();
-      }
+//         if( snackActive == 4){
+//           resetImgList();
+//       }
       
-    }, 2000);
-  }  
-}
-function desktopAction(thisObj){
-  var snackActive = $(".snack.active").length;
-  if (windowWidth >= tabletView) {
-    setTimeout(function(){ 
+//     }, 2000);
+//   }  
+// }
+// function desktopAction(thisObj){
+//   var snackActive = $(".snack.active").length;
+//   if (windowWidth >= tabletView) {
+//     setTimeout(function(){ 
             
-      $(thisObj).addClass("show");
+//       $(thisObj).addClass("show");
      
-        if( snackActive == $(".snack").length){
-          resetImgList();
-      }
+//         if( snackActive == $(".snack").length){
+//           resetImgList();
+//       }
       
-    }, 2000);
-  }  
-}
+//     }, 2000);
+//   }  
+// }
 //$(this).hasClass("active") ? $(this).off('click') : 
+
+function countCliks(thisObj){
+  let totalClick = $('.snack:visible').length;
+  let countClick = $('.snack.active').length;
+  if(totalClick < 3){
+    totalClick = 4
+    setTimeout(function(){
+      $(thisObj).addClass("hide-md-active").removeClass("show").next().addClass("show"); 
+    }, 2000);
+  }
+  setTimeout(function(){
+    if( countClick == totalClick ){
+        resetImgList();
+    }
+  }, 2000);
+}
+
 $(".snack").on('click', function(){
   
   if(!$(this).hasClass("active")){
   $('.topteeth', $(this)).css("visibility", "visible");
   $('.bottomteeth', $(this)).css("visibility", "visible");
   $(this).addClass('active');
-  desktopAction($(this));
-  mobileAction($(this));
-  tabletAction($(this));
-
+  // desktopAction($(this));
+  // mobileAction($(this));
+  // tabletAction($(this));
+  //countCliks($(this));
+  
   closeTeeth($(this), openTeeth);
+  countCliks($(this));
   }
   
 });
@@ -390,6 +399,7 @@ if(socialVisibility=="0"){
 }
 
 });
+
 window.onload = init();
 window.onresize = function(){
   setTeeth();

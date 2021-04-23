@@ -607,6 +607,11 @@ MEDIA QUERIES
 	.snack{
 		height: 180px;
 		width: 180px;
+		opacity: 1;
+	}
+	.snack.hide-md,
+	.snack.landscape-hide{
+		display: none;
 	}
 	.social-wrapper{
 		padding-top: 5px;
