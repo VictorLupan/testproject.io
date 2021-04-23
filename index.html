@@ -28,16 +28,16 @@
 			if ((window.innerWidth < 768) && ( window.innerWidth < window.innerHeight)) {
 				console.log(barHeight)	
 		elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
-		textCount.innerHTML = resHeight
+		textCount.innerHTML = resHeight + "p"
 		console.log(elementHeight + "-" + window.innerHeight + "  -- p")
 	
 				
 			}else if( window.innerWidth > window.innerHeight ||
         Math.abs(elementHeight - window.innerHeight) > 100){
-			textCount.innerHTML = elementHeight
-			/*elementHeight = window.innerHeight;
-			resHeight = elementHeight - actualHeight;*/
-			elemFixMobile.style.height = `calc(80vh - ${elementHeight} 'px'`;
+			textCount.innerHTML = elementHeight  + "l"
+			elementHeight = window.innerHeight;
+			resHeight = elementHeight - actualHeight;
+			elemFixMobile.style.height = `calc(80vh - ${resHeight} 'px'`;
 
 			console.log(elementHeight + "-" + window.innerHeight + "  -- l-")
 			}else{
