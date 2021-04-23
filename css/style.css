@@ -587,14 +587,9 @@ MEDIA QUERIES
 	
 }
 @media only screen 
-  and (min-device-width: 375px) 
-  and (min-device-width: 414px) 
-  and (max-device-width: 667px) 
-  and (max-device-width: 736px)
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
 	.page{
 		justify-content: flex-start;
 		height: initial;
