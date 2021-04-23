@@ -592,7 +592,6 @@ and (max-device-width: 926px)
 and (orientation: landscape) { 
 	.social-grid{grid-template-columns: repeat(2, 1fr);grid-gap:30px}
 	.dots{display: none;}
-	.main{overflow: hidden;height: 100vh !important;padding-top: 1px;}
 	.page{
 		justify-content: flex-start;
 		height: initial;
