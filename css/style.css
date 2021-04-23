@@ -594,7 +594,7 @@ and (orientation: landscape) {
 	.dots{display: none;}
 	.page{
 		justify-content: flex-start;
-		height: 100%;
+		height: initial;
 		text-align: center;
 		position: relative;
 	}
@@ -612,7 +612,7 @@ and (orientation: landscape) {
 		grid-gap: 10px;
 	}
 	.page-grid{
-		height: 100%;
+		height: initial;
 		min-height: 100%;
 	}
 	.snack{
