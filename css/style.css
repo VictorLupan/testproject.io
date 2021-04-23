@@ -624,6 +624,9 @@ and (orientation: landscape) {
 		margin-right: auto;
 		opacity: 1 !important;
 	}
+	.page-container{
+		min-height: 80vh;
+	}
 	.snack.hide-md,
 	.snack.landscape-hide{
 		display: none;
