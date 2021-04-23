@@ -584,19 +584,27 @@ MEDIA QUERIES
 	.header{top: 1vh;}
 	.footer{bottom: 1vh;}
 	#pageOne{margin-bottom: 30px;}
+	
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
 	.page{
 		justify-content: flex-start;
+		height: initial;
 	}
 	h1{
-		max-width: 405px;
+		max-width: 100%;
 		margin-top: 0;
 		margin-bottom: 0;
 	}
 	.page-grid{
 		height: 100%;
 	}
-	.snack,
-	.snack-grid{
+	.snack{
 		height: 180px;
 		width: 180px;
 	}

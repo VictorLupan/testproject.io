@@ -303,14 +303,38 @@ if (windowWidth <= mobileView) {
  });  
     
 } 
+function detectMobileOrientation() {
+  switch(screen.orientation.angle) {  
+    case 90:
+    case 270:
+      alert('landscape' + screen.orientation.angle);
+      break; 
+    default:
+      alert('portrait' + screen.orientation.angle);
+      break; 
+  }
+}
+window.addEventListener("orientationchange", detectMobileOrientation);
+
+detectMobileOrientation()
+
 function mobileAction(thisObj){
   var snackActive = $(".snack.active").length;
   if (windowWidth <= mobileView) {
     setTimeout(function(){ 
-      $(thisObj).addClass("hide-md-active").removeClass("show").next().addClass("show");  
-      if( snackActive == 4){
-        resetImgList();
-    }
+      $(thisObj).addClass("hide-md-active").removeClass("show").next().addClass("show"); 
+      if (window.matchMedia("(orientation: landscape)").matches) {
+        console.log("l")
+        if( snackActive == 3){
+          resetImgList();
+      }
+      }
+      if (window.matchMedia("(orientation: portrait)").matches) {
+        console.log("p")
+        if( snackActive == 4){
+          resetImgList();
+      }
+     }
     }, 2000);
   }  
 }
