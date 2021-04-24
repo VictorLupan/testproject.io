@@ -497,7 +497,7 @@ and (min-device-width: 320px)
 and (max-device-width: 767px)
 and (orientation: portrait) {
 	#control-height {
-		height: 100vh;
+		height: 100%;
 		width: 0;
 		top: 0;
         bottom: 0;
@@ -598,7 +598,7 @@ and (orientation: landscape) {
         height: calc(100vh - calc(100vh - 100%));
     }
 	#control-height {
-		height: 100vh;
+		height: 100%;
 		width: 0;
 		top: 0;
 		display: block;
