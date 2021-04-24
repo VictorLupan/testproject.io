@@ -420,7 +420,7 @@ MEDIA QUERIES
 and (min-device-width: 768px)
 and (max-device-width: 970px)
 and (orientation: portrait)
-and (orientation: landscape) {
+and  (orientation: landscape) {
 	.snack.hide-md:not(.truncate), .snack.landscape-hide:not(.truncate){
 		display: block !important;
 	}
