@@ -71,20 +71,20 @@
     function calcFullHeight() {
         let elementHeight = $("#control-height").innerHeight();
         let actualHeight = $(window).innerHeight();
-        let docHeight = $("body").height();
-        jQuery('.main').css("height", $(window).height());
-        $("#control-height").text(elementHeight + "--" + actualHeight + "__" + docHeight)
+        let resHeight = elementHeight - actualHeight;
+        jQuery('.main').css("height", `calc(100vh - ${resHeight}px`);
+        $("#control-height").text(elementHeight + "--" + resHeight)
     }
 
     (function($) {
         
-        //calcFullHeight();
+        calcFullHeight();
 
         jQuery(window).on('load resize orientationchange', function() {
             // 500ms timeout for getting the correct height after orientation change
             setTimeout(function() {
                 calcFullHeight();
-            }, 1300);
+            }, 300);
 
         });
 
