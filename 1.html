@@ -73,7 +73,7 @@
         let actualHeight = $(window).innerHeight();
         let resHeight = Math.abs(actualHeight - elementHeight);
         jQuery('#fix-mobile').css("height", `calc(80% - ${resHeight}px`);
-        jQuery('.main').css("height", `${actualHeight}px`);
+        jQuery('.main').css("height", `${actualHeight + resHeight}px`);
         $("#control-height").text(elementHeight + "--" + resHeight)
     }
 
