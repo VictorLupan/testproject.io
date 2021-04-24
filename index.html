@@ -32,12 +32,12 @@
 		console.log(elementHeight + "-" + window.innerHeight + "  -- p")
 	
 				
-			}else if( window.innerWidth > window.innerHeight &&
+			}else if( (window.innerWidth > window.innerHeight) &&
         (window.innerWidth < 926)){
 			
 			let elementHeight = document.getElementById('control-height').clientHeight;
 			let resHeight = elementHeight - actualHeight;
-			//textCount.innerHTML = resHeight  + "l"
+			textCount.innerHTML = resHeight  + "l"
 			elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
 
 			console.log(elementHeight + "-" + window.innerHeight + "  -- l-")
