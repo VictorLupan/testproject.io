@@ -70,8 +70,9 @@
 //Loading height on touch-device
     function calcFullHeight() {
         let elementHeight = $("#control-height").innerHeight();
+        let actualHeight = $(window).innerHeight();
         jQuery('.main').css("height", $(window).height());
-        $("#control-height").text(elementHeight)
+        $("#control-height").text(elementHeight + "--" + actualHeight)
     }
 
     (function($) {
