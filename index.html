@@ -22,14 +22,14 @@
 			let elementHeight = document.getElementById('control-height').clientHeight;
 			let barHeight = elementHeight - actualHeight;
 			let resHeight = Math.abs(barHeight);
-			let textCount = document.getElementById('control-height')
+			let textCount = document.getElementById('control-height');
 			let elemFixMobile = document.getElementById("fix-mobile");
 			
 			if ((window.innerWidth < 768) && ( window.innerWidth < window.innerHeight)) {
-				console.log(barHeight)	
+				resHeight = 0;
 		elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
-		//textCount.innerHTML = resHeight + "p"
-		console.log(elementHeight + "-" + window.innerHeight + "  -- p")
+		textCount.innerHTML = resHeight + "p";
+		console.log(elementHeight + "-" + window.innerHeight + "  -- p");
 	
 				
 			}else if( (window.innerWidth > window.innerHeight) &&
@@ -37,10 +37,10 @@
 			
 			let elementHeight = document.getElementById('control-height').clientHeight;
 			let resHeight = elementHeight - actualHeight;
-			textCount.innerHTML = resHeight  + "l"
+			textCount.innerHTML = resHeight  + "l";
 			elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
 
-			console.log(elementHeight + "-" + window.innerHeight + "  -- l-")
+			console.log(elementHeight + "-" + window.innerHeight + "  -- l-");
 			}else{
 				elemFixMobile.style.removeProperty("height");
 			}
