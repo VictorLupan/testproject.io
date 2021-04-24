@@ -506,6 +506,8 @@ and (orientation: portrait) {
 	.page{
 		text-align: left;
 	}
+    html,
+    body,
 	.main{
         height: calc(100vh - calc(100vh - 100%));
 		/* position: fixed;
@@ -595,6 +597,8 @@ and (max-device-width: 926px)
 , (-webkit-min-device-pixel-ratio: 2)
 , (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) { 
+    html,
+    body,
     .main{
         height: calc(100vh - calc(100vh - 100%));}
 	#control-height {
