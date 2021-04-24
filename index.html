@@ -26,7 +26,6 @@
 			let elemFixMobile = document.getElementById("fix-mobile");
 			
 			if ((window.innerWidth < 768) && ( window.innerWidth < window.innerHeight)) {
-				resHeight = 0;
 		elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
 		textCount.innerHTML = resHeight + "p";
 		console.log(elementHeight + "-" + window.innerHeight + "  -- p");
@@ -35,8 +34,8 @@
 			}else if( (window.innerWidth > window.innerHeight) &&
         (window.innerWidth < 926)){
 			
-			let elementHeight = document.getElementById('control-height').clientHeight;
-			let resHeight = elementHeight - actualHeight;
+			elementHeight = document.getElementById('control-height').clientHeight;
+			resHeight = elementHeight - window.innerHeight;
 			textCount.innerHTML = resHeight  + "l";
 			elemFixMobile.style.height = `calc(80vh - ${resHeight}px)`;
 
