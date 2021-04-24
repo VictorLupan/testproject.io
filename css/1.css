@@ -58,7 +58,7 @@ a{
 
 .page-container{
 	overflow-y: scroll;
-	height:80vh;
+	height:100%;
 	/* margin-top:10vh;
 	margin-bottom: 10vh; */
 	/* scroll-snap-type: mandatory; */
