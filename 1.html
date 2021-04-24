@@ -72,8 +72,8 @@
         let elementHeight = $("#control-height").innerHeight();
         let actualHeight = $(window).innerHeight();
         let resHeight = Math.abs(actualHeight - elementHeight);
-        jQuery('#fix-mobile').css("height", `calc(80vh - ${resHeight}px`);
-        jQuery('.main').css("height", `${elementHeight}px`);
+        jQuery('#fix-mobile').css("height", `calc(80% - ${resHeight}px`);
+        jQuery('.main').css("height", `${actualHeight}px`);
         $("#control-height").text(elementHeight + "--" + resHeight)
     }
 
