@@ -500,16 +500,15 @@ and (orientation: portrait) {
 		height: 100vh;
 		width: 0;
 		top: 0;
+        bottom: 0;
 		display: block;
-		position: absolute;
+		position: fixed;
 	}
 	.page{
 		text-align: left;
 	}
 	.main{
         height: calc(100vh - calc(100vh - 100%));
-		position: fixed;
-		width: 100%;
 		/*padding-top: 10vh;
 		padding-bottom: 10vh; */
 	} 
@@ -597,15 +596,13 @@ and (orientation: landscape) {
     
     .main{
         height: calc(100vh - calc(100vh - 100%));
-        position: fixed;
-		width: 100%;
     }
 	#control-height {
 		height: 100vh;
 		width: 0;
 		top: 0;
 		display: block;
-		position: absolute;
+		position: fixed;
 	}
 	.social-grid{grid-template-columns: repeat(2, 1fr);grid-gap:30px}
 	.dots{display: none;}
