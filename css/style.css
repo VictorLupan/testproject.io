@@ -648,6 +648,9 @@ and (orientation: landscape) {
 		height: initial;
 		justify-content: start;
 	}
+	.page-two-grid{
+		align-items: flex-start;
+	}
 }
 /* @media  (max-width: 767px){
 	#control-height {
