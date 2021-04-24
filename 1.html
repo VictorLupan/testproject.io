@@ -71,7 +71,7 @@
     function calcFullHeight() {
         let elementHeight = $("#control-height").innerHeight();
         let actualHeight = $(window).innerHeight();
-        let docHeight = $( document ).height();
+        let docHeight = $("body").height();
         jQuery('.main').css("height", $(window).height());
         $("#control-height").text(elementHeight + "--" + actualHeight + "__" + docHeight)
     }
