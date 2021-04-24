@@ -510,10 +510,10 @@ and (orientation: portrait) {
     body,
 	.main{
         height: calc(100vh - calc(100vh - 100%));
-		/* position: fixed;
+		position: fixed;
 		height: 100vh;
 		width: 100%;
-		padding-top: 10vh;
+		/*padding-top: 10vh;
 		padding-bottom: 10vh; */
 	} 
 	h1{font-size: 50px;margin: 30px 5px;text-align: left;max-width: 270px;margin-left: auto;margin-right: auto;}
@@ -600,7 +600,11 @@ and (orientation: landscape) {
     html,
     body,
     .main{
-        height: calc(100vh - calc(100vh - 100%));}
+        height: calc(100vh - calc(100vh - 100%));
+        position: fixed;
+		height: 100vh;
+		width: 100%;
+    }
 	#control-height {
 		height: 100vh;
 		width: 0;
