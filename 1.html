@@ -78,13 +78,13 @@
 
     (function($) {
         
-        calcFullHeight();
+        //calcFullHeight();
 
         jQuery(window).on('load resize orientationchange', function() {
             // 500ms timeout for getting the correct height after orientation change
             setTimeout(function() {
                 calcFullHeight();
-            }, 300);
+            }, 1300);
 
         });
 
