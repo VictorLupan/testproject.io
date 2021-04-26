@@ -148,6 +148,7 @@ function setSnacks(messVisible){
   }else{
     $(".message-ty").removeClass("show-message").hide();
     $(".snack-grid").show();
+    $(".page-container").scrollTop(0);
   }  
   setTimeout(function(){ 
   $('.snack-item').each(function(){
