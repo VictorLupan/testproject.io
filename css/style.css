@@ -422,9 +422,8 @@ MEDIA QUERIES
 }
 @media only screen 
 and (min-device-width: 768px)
-and (max-device-width: 970px)
-and (orientation: portrait)
-and  (orientation: landscape) {
+and (max-device-width: 1024px)
+and (orientation: portrait) {
 	.snack.hide-md:not(.truncate), .snack.landscape-hide:not(.truncate){
 		display: block !important;
 	}
@@ -473,6 +472,7 @@ and  (orientation: landscape) {
 	.dots{height: 59px;
 	display: none;}
 	.dot{
+		display: block;
 		height: 6px;
 		width: 6px;
 		background-color: #38383f;
@@ -489,21 +489,29 @@ and  (orientation: landscape) {
 		margin: 0 10px;
 	}
 }
+@media only screen 
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape){
+	.snack.hide-md, .snack.landscape-hide{
+		display: block !important;
+	}
+}
 
 /* mobile */
-#control-height{display: none;}
+#control-height {
+	height: 100%;
+	width: 0;
+	top: 0;
+	bottom: 0;
+	display: block;
+	position: fixed;
+}
 @media only screen 
 and (min-device-width: 320px)
 and (max-device-width: 767px)
 and (orientation: portrait) {
-	#control-height {
-		height: 100%;
-		width: 0;
-		top: 0;
-        bottom: 0;
-		display: block;
-		position: fixed;
-	}
+	
 	.page{
 		text-align: left;
 	}
@@ -584,26 +592,22 @@ and (orientation: portrait) {
 		right: 0;
 	}
 	.social-grid{
-		grid-template-columns: repeat(1, 1fr) !important
+		grid-template-columns: repeat(1, 1fr) !important;
+		grid-gap:30px;
 	}
 }
 @media only screen 
 and (min-device-width: 375px)
-and (max-device-width: 926px) 
-, (-webkit-min-device-pixel-ratio: 2)
-, (-webkit-min-device-pixel-ratio: 3)
+and (max-device-width: 896px) 
 and (orientation: landscape) { 
-    
+    .snack.hide-md,
+	.snack.landscape-hide{
+		display: none !important;
+	}
     .main{
         height: calc(100vh - calc(100vh - 100%));
     }
-	#control-height {
-		height: 100%;
-		width: 0;
-		top: 0;
-		display: block;
-		position: fixed;
-	}
+	
 	.social-grid{grid-template-columns: repeat(2, 1fr);grid-gap:30px}
 	.dots{display: none;}
 	.page{
@@ -639,14 +643,8 @@ and (orientation: landscape) {
 		margin-left: auto;
 		margin-right: auto;
 		opacity: 1 !important;
-	 }/*
-	.page-container{
-		max-height: calc(80vh - 30px);
-	} */
-	.snack.hide-md,
-	.snack.landscape-hide{
-		display: none;
-	}
+	 }
+	
 	.social-wrapper{
 		padding-top: 5px;
 		padding-bottom: 10px;
@@ -659,97 +657,6 @@ and (orientation: landscape) {
 		align-items: flex-start;
 	}
 }
-/* @media  (max-width: 767px){
-	#control-height {
-		height: 100vh;
-		width: 0;
-		top: 0;
-		display: block;
-		position: absolute;
-	}
-	.main{
-		position: fixed;
-		height: 100vh;
-		width: 100%;
-		padding-top: 10vh;
-		padding-bottom: 10vh;
-	}
-	h1{font-size: 50px;margin: 30px 5px;text-align: left;max-width: 270px;margin-left: auto;margin-right: auto;}
-	.page-container{
-		height: 80vh;
-		margin: 0;
-	}
-	.hide-md,
-	.hide-md-active{
-		display: none;
-	}
-	.snack-grid{
-		grid-template-columns: repeat( auto-fit, minmax(270px, 1fr) );
-		display: block;
-		position: relative;
-		height: 270px;
-		width: 270px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.snack{
-		opacity: 1;
-		position: absolute;
-		height: 270px;
-		width: 270px;
-	}
-	.snack:first-child{
-		opacity: 0;
-		animation: popIn 600ms ease 100ms 1 normal forwards
-	}
-	.snack + .snack,
-	.snack.v-visibility + .snack.v-visibility{
-		display: none;
-	}
-	.snack.show,
-	.snack.v-visibility.show{
-		display: block !important;
-	}
-	.snack.show .snack-item,
-	.snack.v-visibility.show .snack-item{
-		opacity: 0;
-		animation: popIn 600ms ease 100ms 1 normal forwards
-	}
-	.page{
-		min-height: 100%;
-		position: relative;
-	}
-	#pageTwo{
-		height: initial;
-		justify-content: start;
-	}
-	.page-grid{
-		grid-template-rows: 1fr auto;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%,-50%);
-		-webkit-transform: translate(-50%,-50%);
-		width: 100%;
-		height: initial;
-	}
-	.snack-wrapper{
-		grid-template-rows:auto;
-		height: initial;		
-	}
-	.wrapper{min-height: 275px;position: relative;}
-	.topteeth{z-index: 10 !important;} .bottomteeth{z-index: 9 !important;}
-	.topteeth, .bottomteeth{
-		width:270px;
-	}
-	.dots{display: none;}
-	.wrapper .snack-grid,.wrapper .message-ty{
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-	}
-}  */
 
 @media (max-width: 500px){
 	h1,

@@ -165,25 +165,30 @@ end clipPath -->
 	if (jQuery('body').hasClass("touch-device")) {
 //Loading height on touch-device
 function calcFullHeight() {
-	let elementHeight = $("#control-height").innerHeight();
-	let actualHeight = $(window).innerHeight();
-	let resHeight = Math.abs(actualHeight - elementHeight);
-	jQuery('#fix-mobile').css("height", `calc(99% - ${resHeight}px`);
-	jQuery('.main').css("height", `${actualHeight + resHeight}px`);
-	//$("#control-height").text(elementHeight + "--" + resHeight)
+	console.log($(window).innerWidth())
+	
+		let elementHeight = $("#control-height").innerHeight();
+		let actualHeight = $(window).innerHeight();
+		let resHeight = Math.abs(actualHeight - elementHeight);
+		jQuery('#fix-mobile').css("height", `calc(99% - ${resHeight}px`);
+		jQuery('.main').css("height", `${actualHeight + resHeight}px`);
+		//$("#control-height").text(elementHeight + "--" + resHeight)
+	
 }
 
 (function($) {
-	
+	if(($(window).innerWidth() !== 768) && ($(window).innerWidth() !== 1024)){
 	calcFullHeight();
 
 	jQuery(window).on('load resize orientationchange', function() {
 		// 300ms timeout for getting the correct height after orientation change
+		
 		setTimeout(function() {
 			calcFullHeight();
 		}, 300);
-
+		
 	});
+}
 })(jQuery);
 
 } else {
