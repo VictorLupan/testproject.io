@@ -761,7 +761,7 @@ and (orientation: landscape) {
 @media (max-width: 500px), (max-height: 730px){
 	.header{top: 1vh;}
 	.footer{bottom: 1vh;}
-	#pageOne{margin-bottom: 30px;}
+	#pageOne{padding-bottom: 50px;}
 	
 }
 
