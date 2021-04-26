@@ -656,6 +656,9 @@ and (orientation: landscape) {
 	.page-two-grid{
 		align-items: flex-start;
 	}
+	#pageOne{
+		scroll-snap-align: end;
+	}
 }
 
 @media (max-width: 500px){
