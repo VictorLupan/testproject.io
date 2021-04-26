@@ -421,9 +421,9 @@ MEDIA QUERIES
 	.dots{right: 15px;}
 }
 @media only screen 
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: portrait) {
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait){
 	.snack.hide-md:not(.truncate), .snack.landscape-hide:not(.truncate){
 		display: block !important;
 	}
@@ -490,8 +490,8 @@ and (orientation: portrait) {
 	}
 }
 @media only screen 
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
+and (min-width: 768px)
+and (max-width: 1024px)
 and (orientation: landscape){
 	.snack.hide-md, .snack.landscape-hide{
 		display: block !important;
@@ -508,9 +508,9 @@ and (orientation: landscape){
 	position: fixed;
 }
 @media only screen 
-and (min-device-width: 320px)
-and (max-device-width: 767px)
-and (orientation: portrait) {
+and (min-width: 320px)
+and (max-width: 767px)
+and (orientation: portrait){
 	
 	.page{
 		text-align: left;
@@ -597,8 +597,8 @@ and (orientation: portrait) {
 	}
 }
 @media only screen 
-and (min-device-width: 375px)
-and (max-device-width: 896px) 
+and (min-width: 375px)
+and (max-width: 896px) 
 and (orientation: landscape) { 
     .snack.hide-md,
 	.snack.landscape-hide{
