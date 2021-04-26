@@ -668,13 +668,22 @@ and (orientation: landscape) {
 	.dots{right: 0;}
 	
 }
-@media (max-width: 500px), (max-height: 730px){
-	.header{top: 1vh;}
-	.footer{bottom: 1vh;}
+@media (min-width: 600px) and (max-width: 767px){
 	#pageOne{padding-bottom: 50px;}
+	.hover-device .snack.hide-md,
+	.hover-device .snack.landscape-hide{
+		display: none !important;
+	}
+	.hover-device .page{justify-content: center;}
 	
 }
-
+@media (min-width: 768px) and (max-width: 1024px){
+	.hover-device .snack.hide-md:not(.truncate),
+	.hover-device .snack.landscape-hide:not(.truncate){
+		display: block !important;
+	}
+	.hover-device .snack-grid{grid-gap: 20px}
+}
 @media (max-width: 350px){
 	h1,
 	.message-ty .title-sticker{font-size: 40px;}

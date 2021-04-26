@@ -281,12 +281,12 @@ if (windowWidth <= mobileView) {
   let wS = 0,
         hO = $('#pageOne').outerHeight(),
         hOT = $('#pageOne').offset().top - 81;
-  $('#fix-mobile').on('scroll', function() {
+  $('.touch-device #fix-mobile').on('scroll', function() {
     wS = $(this).scrollTop();
-  if(wS >= (hOT + hO + 10)){
-    $('#fix-mobile').css('scroll-snap-type','none');
+  if(wS >= (hOT + hO + 40)){
+    $('.touch-device #fix-mobile').css('scroll-snap-type','none');
   }else{
-    $('#fix-mobile').css('scroll-snap-type','y mandatory');
+    $('.touch-device #fix-mobile').css('scroll-snap-type','y mandatory');
   }
  });  
 } 
