@@ -262,7 +262,6 @@ a{
 }
 
 .header{
-  	top:40px;
 	grid-template-columns: 40px auto 1fr;
 }
 
@@ -272,7 +271,6 @@ a{
 }
 
 .footer{
-  	bottom:40px;
 	grid-template-columns: 1fr auto 1fr;
 }
 
