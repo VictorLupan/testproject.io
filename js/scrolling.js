@@ -281,10 +281,9 @@ if (windowWidth <= mobileView) {
   let wS = 0,
         hO = $('#pageOne').outerHeight(),
         hOT = $('#pageOne').offset().top - 81;
-  $('body.touch-device').on('scroll', '#fix-mobile', function() {
+  $('.touch-device #fix-mobile').on('scroll', function() {
     wS = $(this).scrollTop();
-    console.log("scrl")
-  if(wS >= (hO / 2)){
+  if(wS >= (hOT + hO + 40)){
     $('.touch-device #fix-mobile').css('scroll-snap-type','none');
   }else{
     $('.touch-device #fix-mobile').css('scroll-snap-type','y mandatory');
