@@ -662,7 +662,7 @@ and (orientation: landscape) {
 		padding-bottom: 50px;
 		scroll-snap-align: start;
 	}
-	.page-container{scroll-snap-type:none;}
+	.page-container{scroll-snap-type:none !important;}
 }
 
 @media (max-width: 500px){
