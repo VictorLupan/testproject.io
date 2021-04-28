@@ -512,6 +512,7 @@ and (orientation: portrait){
 	body{overflow: hidden;position: fixed;top: 0;height: 100%;width: 100%;}
 	.page{
 		text-align: left;
+		align-content: flex-start;
 	}
 	.main{
         /*height: calc(100vh - calc(100vh - 100%));*/
