@@ -509,7 +509,7 @@ and (orientation: landscape){
 and (min-width: 320px)
 and (max-width: 767px)
 and (orientation: portrait){
-	
+	html,body{overflow: hidden;}
 	.page{
 		text-align: left;
 	}
