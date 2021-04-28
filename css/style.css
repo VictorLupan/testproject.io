@@ -657,6 +657,7 @@ and (orientation: landscape) {
 		align-items: flex-start;
 	}
 	#pageOne{
+		padding-bottom: 50px;
 		scroll-snap-align: end;
 	}
 }
