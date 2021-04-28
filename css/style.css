@@ -600,7 +600,7 @@ and (orientation: portrait){
 }
 @media only screen 
 and (min-width: 375px)
-and (max-width: 896px) 
+and (max-width: 926px) 
 and (orientation: landscape) { 
     .snack.hide-md,
 	.snack.landscape-hide{
