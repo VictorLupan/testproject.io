@@ -260,6 +260,7 @@ a{
 	align-items: center;
 	grid-gap:10px;
 }
+.bar.footer{height: 28px}
 
 .header{
 	grid-template-columns: 40px auto 1fr;
