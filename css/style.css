@@ -66,6 +66,7 @@ a{
 	-webkit-scroll-snap-points-y: repeat(300px); */
 	scroll-snap-type: y mandatory;
 	-webkit-scroll-snap-type: y mandatory;
+	-webkit-overflow-scrolling: touch;
 }
 .ty-page{
 	overflow: hidden;
@@ -606,8 +607,8 @@ and (orientation: landscape) {
 	.social-grid{grid-template-columns: repeat(2, 1fr);grid-gap:30px}
 	.dots{display: none;}
 	.page{
-		overflow-x: hidden;
-		overflow-y: auto;
+		min-height: 100%;
+		height: auto;
 		justify-content: flex-start;
 		text-align: center;
 		position: relative;
