@@ -278,6 +278,7 @@ function resetImgList(){
 }
 
 if (windowWidth <= mobileView) {
+  console.log("loascr")
   let wS = 0,
         hO = $('#pageOne').outerHeight(),
         hOT = $('#pageOne').offset().top - 81;
