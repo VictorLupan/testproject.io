@@ -278,7 +278,7 @@ function resetImgList(){
 }
 
 if (windowWidth <= mobileView) {
-  let wS = 0,
+  /*let wS = 0,
         hO = $('#pageOne').outerHeight(),
         hOT = $('#pageOne').offset().top - 81;
   $('.touch-device #fix-mobile').on('scroll', function() {
@@ -288,7 +288,7 @@ if (windowWidth <= mobileView) {
   }else{
     $('.touch-device #fix-mobile').css('scroll-snap-type','y mandatory');
   }
- });  
+ });*/  
 } 
 
 
