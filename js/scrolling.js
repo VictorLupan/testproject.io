@@ -12,7 +12,7 @@ var bottomSpacer=0;
 var aMoveDot = $('.moveDot');
 var aPageContainer = $('.page-container');
 var aFilledDot = $('#filled-dot');
-var windowWidth = $(window).width();
+var windowWidth = $(window).innerWidth();
 const tabletView = 970;
 const mobileView = 767;
 
