@@ -20,7 +20,7 @@
 
 <body id="body">
     
-
+<div id="control-height"></div>
 <div class="main">
 <div class="bar header">
 	<div class="box-line open-right"></div>
@@ -151,7 +151,7 @@ end clipPath -->
 	<a href="#pageTwo" class="second-screen"><div class="dot"></div></a>
 </div>
 
-<div id="control-height"></div>
+
 </body>
 <script>
         
@@ -171,7 +171,7 @@ function calcFullHeight() {
 		let resHeight = Math.abs(actualHeight - elementHeight);
 		jQuery('#fix-mobile').css("height", `calc(99.99% - ${resHeight}px`);
 		jQuery('.main').css("height", `${actualHeight + resHeight}px`);
-		$("#control-height").text(elementHeight + "--" + resHeight + "ac" + actualHeight);
+		//$("#control-height").text(elementHeight + "--" + resHeight + "ac" + actualHeight);
 	
 }
 
