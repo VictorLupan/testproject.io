@@ -16,7 +16,7 @@ var windowWidth = $(window).innerWidth();
 const tabletView = 970;
 const mobileView = 767;
 
-
+console.log("www")
 /* -- TEST LATER --
 const express = require('express');
 const app = express();
