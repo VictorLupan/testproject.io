@@ -514,7 +514,7 @@ and (orientation: portrait){
 		text-align: left;
 	}
 	.main{
-        height: calc(100vh - calc(100vh - 100%));
+        /*height: calc(100vh - calc(100vh - 100%));*/
 		/*padding-top: 10vh;
 		padding-bottom: 10vh; */
 	} 
