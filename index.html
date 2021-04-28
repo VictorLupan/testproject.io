@@ -171,7 +171,7 @@ function calcFullHeight() {
 		let resHeight = Math.abs(actualHeight - elementHeight);
 		jQuery('#fix-mobile').css("height", `calc(99.99% - ${resHeight}px`);
 		jQuery('.main').css("height", `${actualHeight + resHeight}px`);
-		//$("#control-height").text(elementHeight + "--" + resHeight);
+		$("#control-height").text(elementHeight + "--" + resHeight);
 	
 }
 
