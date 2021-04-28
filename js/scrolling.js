@@ -288,6 +288,9 @@ if (windowWidth <= mobileView) {
   }else{
     $('.touch-device #fix-mobile').css('scroll-snap-type','y mandatory');
   }
+  if($(window).innerWidth() > $(window).innerHieght() && ($(window).innerWidth() > 926)){
+    $('.touch-device #fix-mobile').css('scroll-snap-type','none');
+  }
  });  
 } 
 
