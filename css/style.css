@@ -78,7 +78,7 @@ a{
 	margin:0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: unset;
 	scroll-snap-align: start;
 	min-height:100%;
 	height: auto;
