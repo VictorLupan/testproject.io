@@ -565,7 +565,8 @@ and (orientation: portrait){
 	}
 	#pageTwo{
 		height: initial;
-		justify-content: start;
+		justify-content: unset;
+		scroll-snap-align: block;
 	}
 	.page-grid{
 		grid-template-rows: 1fr auto;

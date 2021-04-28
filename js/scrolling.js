@@ -12,11 +12,11 @@ var bottomSpacer=0;
 var aMoveDot = $('.moveDot');
 var aPageContainer = $('.page-container');
 var aFilledDot = $('#filled-dot');
-var windowWidth = $(window).innerWidth();
+var windowWidth = $(window).width();
 const tabletView = 970;
 const mobileView = 767;
 
-console.log("www")
+
 /* -- TEST LATER --
 const express = require('express');
 const app = express();
@@ -278,7 +278,6 @@ function resetImgList(){
 }
 
 if (windowWidth <= mobileView) {
-  console.log("loascr")
   let wS = 0,
         hO = $('#pageOne').outerHeight(),
         hOT = $('#pageOne').offset().top - 81;
