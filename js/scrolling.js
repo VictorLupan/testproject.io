@@ -288,9 +288,7 @@ if (windowWidth <= mobileView) {
   }else{
     $('.touch-device #fix-mobile').css('scroll-snap-type','y mandatory');
   }
-  if($(window).innerWidth() > $(window).innerHieght() && ($(window).innerWidth() > 926)){
-    $('.touch-device #fix-mobile').css('scroll-snap-type','none');
-  }
+  
  });  
 } 
 
@@ -366,5 +364,8 @@ if(socialVisibility=="0"){
 window.onload = init();
 window.onresize = function(){
   setTeeth();
+  if($(window).innerWidth() > $(window).innerHieght() && ($(window).innerWidth() > 926)){
+    $('.touch-device #fix-mobile').css('scroll-snap-type','none');
+  }
 };
 
