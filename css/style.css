@@ -565,8 +565,8 @@ and (orientation: portrait){
 	}
 	#pageTwo{
 		height: initial;
-		justify-content: flex-start;
-		scroll-snap-align: none;
+		justify-content: space-between;
+		scroll-snap-align: start;
 	}
 	.page-grid{
 		grid-template-rows: 1fr auto;
