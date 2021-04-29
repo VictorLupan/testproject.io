@@ -407,6 +407,7 @@ a{
 	border-bottom: 1px solid #3B3B3C;
 }
 .wrapper{min-height: 400px;}
+.page-container .wrap{height: inherit;}
 /****************
 
 MEDIA QUERIES 
@@ -511,18 +512,30 @@ and (orientation: landscape){
 and (min-width: 320px)
 and (max-width: 767px)
 and (orientation: portrait){
-	body{overflow: hidden;position: fixed;top: 0;height: 100%;width: 100%;}
+	body{overflow: hidden;position: fixed;top: 0;height: 100%;width: 100%;overscroll-behavior-y: none;}
 	.page{
 		text-align: left;
 		align-content: flex-start;
 	} 
-	.touch-device .main{position:absolute;top: 0;left:0;right: 0;}
+	.touch-device .main{position:relative;top: 0;left:0;right: 0;}
 	h1{font-size: 50px;margin: 30px 5px;text-align: left;max-width: 270px;margin-left: auto;margin-right: auto;}
 	.page-container{
-		scroll-snap-type: y proximity;
+		scroll-snap-type:none;
+		overflow: hidden;
 		height: 80vh;
 		margin: 0;
+		position: relative;
 	}
+	.page-container .wrap{
+		overflow: scroll;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		scroll-snap-type: y mandatory;
+	}
+	.socialCard{opacity: 1;}
 	.hide-md,
 	.hide-md-active{
 		display: none;

@@ -278,6 +278,17 @@ function resetImgList(){
 }
 
 if (windowWidth <= mobileView) {
+  
+  $('.touch-device #fix-mobile').on('resize scroll', function(){
+  // let firstScreen = $('#pageOne').outerHeight();
+  // let secondScreen = $('#pageTwo').outerHeight();
+  // if($('#pageOne:visible')){
+  //   console.log(firstScreen)
+  // }
+  // if($('#pageTwo:visible')){
+  //   console.log(secondScreen)
+  // }
+})
   /*let wS = 0,
         hO = $('#pageOne').outerHeight(),
         hOT = $('#pageOne').offset().top - 81;
