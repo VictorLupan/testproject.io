@@ -290,26 +290,7 @@ if (windowWidth <= mobileView) {
     }else{
         $(this).css('scroll-snap-type','y mandatory');
     }
-  // let firstScreen = $('#pageOne').outerHeight();
-  // let secondScreen = $('#pageTwo').outerHeight();
-  // if($('#pageOne:visible')){
-  //   console.log(firstScreen)
-  // }
-  // if($('#pageTwo:visible')){
-  //   console.log(secondScreen)
-  // }
-})
-  /*let wS = 0,
-        hO = $('#pageOne').outerHeight(),
-        hOT = $('#pageOne').offset().top - 81;
-  $('.touch-device #fix-mobile').on('scroll', function() {
-    wS = $(this).scrollTop();
-  if(wS >= (hOT + hO + 40)){
-    $('.touch-device #fix-mobile').css('scroll-snap-type','none');
-  }else{
-    $('.touch-device #fix-mobile').css('scroll-snap-type','y mandatory');
-  }
- });*/  
+}) 
 } 
 
 
@@ -381,6 +362,14 @@ if(socialVisibility=="0"){
 
 });
 
+$(window).on("resize", function(){
+  let windowHeight = $(window).height();
+  if($('body').hasClass('hover-device') && windowHeight <= 660){
+    $('body').addClass('small-screen');
+  }else{
+    $('body').removeClass('small-screen');
+  }
+}).resize();
 window.onload = init();
 window.onresize = function(){
   setTeeth();

@@ -527,7 +527,8 @@ and (orientation: portrait){
 		position: relative;
 	}
 	.page-container .wrap{
-		overflow: scroll;
+		overflow-y: scroll;
+		overflow-x: hidden;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -788,4 +789,9 @@ and (orientation: landscape) {
 }
 
 
-
+@media (min-width: 916px) {
+	.hover-device.small-screen .snack.hide-md{display: none !important;}
+	.small-screen .snack-grid{grid-template-rows: repeat(1, 180px);}
+	.small-screen .page{min-height: 430px;}
+	.small-screen #pageTwo{min-height: 360px;}
+}
