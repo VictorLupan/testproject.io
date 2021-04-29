@@ -177,7 +177,7 @@ function calcFullHeight() {
 }
 
 (function($) {
-	if(($(window).innerWidth() !== 768) && ($(window).innerWidth() !== 1024)){
+	
 	calcFullHeight();
 
 	jQuery(window).on('load resize orientationchange', function() {
@@ -188,7 +188,7 @@ function calcFullHeight() {
 		}, 500);
 		
 	});
-}
+
 })(jQuery);
 
 } else {
