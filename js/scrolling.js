@@ -279,7 +279,17 @@ function resetImgList(){
 
 if (windowWidth <= mobileView) {
   
-  $('.touch-device #fix-mobile').on('resize scroll', function(){
+  $('.touch-device #fix-mobile .wrap').on('resize scroll', function(){
+    let scrollMobile = $(this).scrollTop(),
+        topPosScreenTow = $('#pageTwo').position(),
+        blockHeight = $('.socialCard').outerHeight(),
+        resScroll = topPosScreenTow.top + blockHeight;
+    //console.log($(this).scrollTop() + " = " + topPosScreenTow.top + " h " + resScroll);
+    if(topPosScreenTow.top <= 0){
+      $(this).css('scroll-snap-type','none');
+    }else{
+        $(this).css('scroll-snap-type','y mandatory');
+    }
   // let firstScreen = $('#pageOne').outerHeight();
   // let secondScreen = $('#pageTwo').outerHeight();
   // if($('#pageOne:visible')){
