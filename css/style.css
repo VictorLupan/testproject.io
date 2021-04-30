@@ -496,6 +496,7 @@ and (orientation: landscape){
 	.snack.hide-md, .snack.landscape-hide{
 		display: block !important;
 	}
+	.main{height: 100vh !important;}
 	#pageOne{padding-bottom: 50px}
 }
 
